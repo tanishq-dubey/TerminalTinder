@@ -2,21 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import ColorSchemeCard from "./components/ColorSchemeCard";
-import ActionButton from "./components/ActionButton";
 import SettingsIcon from "./components/SettingsIcon";
 import Settings from "./components/Settings";
-import { ColorScheme, knownSchemes, generateRandomScheme, crossSchemes, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
+import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   const [schemes, setSchemes] = useState<ColorScheme[]>([]);
-  const [selectedSchemes, setSelectedSchemes] = useState<number[]>([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [likedSchemes, setLikedSchemes] = useState<ColorScheme[]>([]);
   const [dislikedSchemes, setDislikedSchemes] = useState<ColorScheme[]>([]);
 
   useEffect(() => {
-    generateNewSchemes();
+    generateNewSchemes(8);
     setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
     const storedLikedSchemes = localStorage.getItem('likedSchemes');
     const storedDislikedSchemes = localStorage.getItem('dislikedSchemes');
@@ -40,37 +39,41 @@ export default function Home() {
     localStorage.setItem('dislikedSchemes', JSON.stringify(dislikedSchemes));
   }, [dislikedSchemes]);
 
-  const generateNewSchemes = () => {
+  const generateNewSchemes = (count: number) => {
+    const knownCount = Math.floor(count / 2);
+    const generatedCount = count - knownCount;
+
     const newSchemes = [
-      knownSchemes[Math.floor(Math.random() * knownSchemes.length)],
-      generateRandomScheme(),
-      likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
+      ...knownSchemes.sort(() => 0.5 - Math.random()).slice(0, knownCount),
+      ...Array(generatedCount).fill(null).map(() => 
+        likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
+      )
     ];
-    setSchemes(newSchemes);
-    setSelectedSchemes([]);
+
+    // Shuffle the new schemes
+    const shuffledSchemes = newSchemes.sort(() => 0.5 - Math.random());
+
+    setSchemes(prevSchemes => [...prevSchemes, ...shuffledSchemes]);
   };
 
-  const handleSchemeSelect = (index: number) => {
-    setSelectedSchemes(prev => {
-      if (prev.includes(index)) {
-        return prev.filter(i => i !== index);
-      } else if (prev.length < 2) {
-        return [...prev, index];
+  const handleLike = (scheme: ColorScheme) => {
+    setLikedSchemes(prev => [...prev, scheme]);
+    removeTopScheme();
+  };
+
+  const handleDislike = (scheme: ColorScheme) => {
+    setDislikedSchemes(prev => [...prev, scheme]);
+    removeTopScheme();
+  };
+
+  const removeTopScheme = () => {
+    setSchemes(prevSchemes => {
+      const newSchemes = prevSchemes.slice(1);
+      if (newSchemes.length < 3) {
+        generateNewSchemes(3);
       }
-      return prev;
+      return newSchemes;
     });
-  };
-
-  const handleAction = () => {
-    if (selectedSchemes.length === 2) {
-      const crossedScheme = crossSchemes(schemes[selectedSchemes[0]], schemes[selectedSchemes[1]]);
-      setLikedSchemes(prev => [...prev, schemes[selectedSchemes[0]], schemes[selectedSchemes[1]]]);
-      setSchemes([crossedScheme, knownSchemes[Math.floor(Math.random() * knownSchemes.length)], generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes)]);
-      setSelectedSchemes([]);
-    } else {
-      setDislikedSchemes(prev => [...prev, ...schemes]);
-      generateNewSchemes();
-    }
   };
 
   const toggleDarkMode = () => {
@@ -83,21 +86,18 @@ export default function Home() {
         <h1 className="text-2xl font-bold">Terminal Color Scheme Generator</h1>
         <SettingsIcon onClick={() => setIsSettingsOpen(true)} />
       </header>
-      <main className="flex flex-col gap-8 items-center">
-        <div className="flex flex-wrap justify-center gap-8">
-          {schemes.map((scheme, index) => (
+      <main className="flex flex-col items-center justify-center h-[calc(100vh-200px)] relative">
+        <AnimatePresence>
+          {schemes.slice(0, 3).map((scheme, index) => (
             <ColorSchemeCard
-              key={index}
+              key={`${scheme.name}-${index}`}
               scheme={scheme}
-              isSelected={selectedSchemes.includes(index)}
-              onSelect={() => handleSchemeSelect(index)}
+              onLike={() => handleLike(scheme)}
+              onDislike={() => handleDislike(scheme)}
+              index={index}
             />
           ))}
-        </div>
-        <ActionButton
-          onClick={handleAction}
-          label={selectedSchemes.length === 2 ? 'Mix' : 'Shuffle'}
-        />
+        </AnimatePresence>
       </main>
       <Settings
         isDarkMode={isDarkMode}
