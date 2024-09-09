@@ -8,6 +8,8 @@ import Settings from "./components/Settings";
 import HelpDialog from "./components/HelpDialog";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
+import { CodeSample } from './utils/types';
+  
 
 export default function Home() {
   const [schemes, setSchemes] = useState<ColorScheme[]>([]);
@@ -18,8 +20,21 @@ export default function Home() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [outputFormat, setOutputFormat] = useState('yaml');
-  const [codeSample, setCodeSample] = useState('javascript');
+  const [codeSample, setCodeSample] = useState<CodeSample>('javascript');
   const [saveSettings, setSaveSettings] = useState(false);
+
+  const generateNewSchemes = (count: number) => {
+    const knownCount = Math.floor(count / 2);
+    const generatedCount = count - knownCount;
+    const newSchemes = [
+      ...knownSchemes.sort(() => 0.5 - Math.random()).slice(0, knownCount),
+      ...Array(generatedCount).fill(null).map(() => 
+        likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
+      )
+    ];
+
+    setSchemes(prevSchemes => [...prevSchemes, ...newSchemes].sort(() => 0.5 - Math.random()));
+  };
 
   useEffect(() => {
     generateNewSchemes(8);
@@ -55,19 +70,6 @@ export default function Home() {
     localStorage.setItem('dislikedSchemes', JSON.stringify(dislikedSchemes));
   }, [dislikedSchemes]);
 
-  const generateNewSchemes = (count: number) => {
-    const knownCount = Math.floor(count / 2);
-    const generatedCount = count - knownCount;
-    const newSchemes = [
-      ...knownSchemes.sort(() => 0.5 - Math.random()).slice(0, knownCount),
-      ...Array(generatedCount).fill(null).map(() => 
-        likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
-      )
-    ];
-
-    setSchemes(prevSchemes => [...prevSchemes, ...newSchemes].sort(() => 0.5 - Math.random()));
-  };
-  
   useEffect(() => {
     if (saveSettings) {
       const settings = JSON.stringify({ outputFormat, codeSample });
@@ -97,10 +99,6 @@ export default function Home() {
     });
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(prev => !prev);
-  };
-
   const toggleHistory = () => {
     setIsHistoryOpen(!isHistoryOpen);
   };
@@ -111,14 +109,6 @@ export default function Home() {
 
   const toggleHelp = () => {
     setIsHelpOpen(!isHelpOpen);
-  };
-
-  const getAllSchemes = () => {
-    const allSchemes = [...likedSchemes, ...dislikedSchemes];
-    const uniqueSchemes = allSchemes.filter((scheme, index, self) =>
-      index === self.findIndex((t) => t.name === scheme.name)
-    );
-    return uniqueSchemes.reverse(); // Most recent first
   };
 
   return (
@@ -177,7 +167,7 @@ export default function Home() {
           outputFormat={outputFormat}
           setOutputFormat={setOutputFormat}
           codeSample={codeSample}
-          setCodeSample={setCodeSample}
+          setCodeSample={(sample: CodeSample) => setCodeSample(sample)}
           saveSettings={saveSettings}
           setSaveSettings={setSaveSettings}
         />

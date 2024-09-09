@@ -24,7 +24,7 @@ const HelpDialog: React.FC<HelpDialogProps> = ({ isOpen, onClose, isDarkMode }) 
           
           <h3 className="text-xl font-semibold">How it works:</h3>
           <ol className="list-decimal list-inside space-y-2">
-            <li>You'll be presented with color schemes one at a time.</li>
+            <li>You&apos;ll be presented with color schemes one at a time.</li>
             <li>Swipe right or click the heart icon to like a scheme.</li>
             <li>Swipe left or click the cross icon to dislike a scheme.</li>
             <li>The app learns from your preferences and generates new schemes based on what you like.</li>
@@ -39,7 +39,7 @@ const HelpDialog: React.FC<HelpDialogProps> = ({ isOpen, onClose, isDarkMode }) 
           </ul>
 
           <p>The more you interact with TerminalTinder, the better it becomes at suggesting color schemes. All information is local, so refreshing the page refreshes learning.</p>
-          <p>Made with ❤️ by <a href="https://dws.rip" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">DWS</a> - It's your internet, take it back.</p>
+          <p>It&apos;s your internet, take it back.</p>
           <hr className="my-4 border-t border-gray-200 w-full" />
           <p>All credit for any non generated color schemes goes to their original creators. Color schemes are sourced from <a href="https://github.com/Mayccoll/Gogh" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Gogh</a>.</p>
           

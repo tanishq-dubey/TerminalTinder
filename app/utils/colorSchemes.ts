@@ -132,20 +132,20 @@ function generateSchemeFromGeneticAlgorithm(likedSchemes: ColorScheme[], dislike
   const newScheme: ColorScheme = JSON.parse(JSON.stringify(parentScheme)); // Deep copy
 
   // Mutate colors
-  Object.keys(newScheme.colors).forEach((colorGroup: keyof typeof newScheme.colors) => {
-    Object.keys(newScheme.colors[colorGroup]).forEach((colorName: string) => {
+  (Object.keys(newScheme.colors) as Array<keyof typeof newScheme.colors>).forEach((colorGroup) => {
+    Object.keys(newScheme.colors[colorGroup]).forEach((colorName) => {
       if (Math.random() < 0.3) { // 30% chance of mutation
-        (newScheme.colors[colorGroup] as any)[colorName] = mutateColor((newScheme.colors[colorGroup] as any)[colorName]);
+        (newScheme.colors[colorGroup] as Record<string, string>)[colorName] = mutateColor((newScheme.colors[colorGroup] as Record<string, string>)[colorName]);
       }
     });
   });
 
   // Avoid similarities with disliked schemes
   dislikedSchemes.forEach(dislikedScheme => {
-    Object.keys(newScheme.colors).forEach((colorGroup: keyof typeof newScheme.colors) => {
-      Object.keys(newScheme.colors[colorGroup]).forEach((colorName: string) => {
-        if ((newScheme.colors[colorGroup] as any)[colorName] === (dislikedScheme.colors[colorGroup] as any)[colorName]) {
-          (newScheme.colors[colorGroup] as any)[colorName] = mutateColor((newScheme.colors[colorGroup] as any)[colorName]);
+    (Object.keys(newScheme.colors) as Array<keyof typeof newScheme.colors>).forEach((colorGroup) => {
+      Object.keys(newScheme.colors[colorGroup]).forEach((colorName) => {
+        if ((newScheme.colors[colorGroup] as Record<string, string>)[colorName] === (dislikedScheme.colors[colorGroup] as Record<string, string>)[colorName]) {
+          (newScheme.colors[colorGroup] as Record<string, string>)[colorName] = mutateColor((newScheme.colors[colorGroup] as Record<string, string>)[colorName]);
         }
       });
     });

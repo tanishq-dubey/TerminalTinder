@@ -212,7 +212,14 @@ else
 fi`
     };
 
-    return samples[codeSample] || samples.javascript;
+    type SampleLanguage = keyof typeof samples;
+
+    // Type guard to check if codeSample is a valid key of samples
+    const isValidSample = (sample: string): sample is SampleLanguage => {
+      return sample in samples;
+    };
+
+    return isValidSample(codeSample) ? samples[codeSample] : samples.javascript;
   };
 
   const handleDownload = (e: React.MouseEvent) => {
@@ -289,7 +296,7 @@ fi`
       }}
       drag="x"
       dragConstraints={{ left: -50, right: 50 }}
-      onDragEnd={(e, { offset, velocity }) => {
+      onDragEnd={(e, { offset }) => {
         if (offset.x > 50) handleLike();
         else if (offset.x < -50) handleDislike();
       }}

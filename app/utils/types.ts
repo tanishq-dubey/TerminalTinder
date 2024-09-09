@@ -1,0 +1,1 @@
+export type CodeSample = 'c' | 'python' | 'rust' | 'go' | 'javascript' | 'java' | 'bash';

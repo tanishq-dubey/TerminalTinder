@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ColorScheme } from '../utils/colorSchemes';
 import { generateYAML, generateJSON, generateXResources, generateTOML } from '../utils/exportFormats';
 import Image from 'next/image';
@@ -13,8 +13,6 @@ interface HistoryPopupProps {
 }
 
 const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchemes, onClose, isDarkMode, outputFormat }) => {
-  const [copiedColor, setCopiedColor] = useState<string | null>(null);
-
   const handleDownload = (scheme: ColorScheme) => {
     let content: string;
     let fileExtension: string;

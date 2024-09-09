@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
+// Import the CodeSample type
+import { CodeSample } from '../utils/types';
+
 interface SettingsProps {
   isOpen: boolean;
   onClose: () => void;
@@ -8,8 +11,8 @@ interface SettingsProps {
   onToggleDarkMode: () => void;
   outputFormat: string;
   setOutputFormat: (format: string) => void;
-  codeSample: string;
-  setCodeSample: (sample: string) => void;
+  codeSample: CodeSample;
+  setCodeSample: (sample: CodeSample) => void;
   saveSettings: boolean;
   setSaveSettings: (save: boolean) => void;
 }
@@ -91,7 +94,7 @@ const Settings: React.FC<SettingsProps> = ({
             <label className="block mb-2">Code Sample</label>
             <select
               value={codeSample}
-              onChange={(e) => setCodeSample(e.target.value)}
+              onChange={(e) => setCodeSample(e.target.value as CodeSample)}
               className="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600"
             >
               <option value="c">C</option>
