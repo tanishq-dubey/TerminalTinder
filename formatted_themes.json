@@ -7,7 +7,7 @@
         "foreground": "#4A4543"
       },
       "normal": {
-        "black": "#090300",
+        "black": "#F7F7F7",
         "red": "#DB2D20",
         "green": "#01A252",
         "yellow": "#FDED02",
@@ -24,7 +24,7 @@
         "blue": "#807D7C",
         "magenta": "#D6D5D4",
         "cyan": "#CDAB53",
-        "white": "#F7F7F7"
+        "white": "#4A4543"
       }
     }
   },
@@ -53,7 +53,7 @@
         "blue": "#807D7C",
         "magenta": "#D6D5D4",
         "cyan": "#CDAB53",
-        "white": "#F7F7F7"
+        "white": "#A5A2A2"
       }
     }
   },
@@ -65,7 +65,7 @@
         "foreground": "#B4E1FD"
       },
       "normal": {
-        "black": "#363636",
+        "black": "#0D1926",
         "red": "#FF0883",
         "green": "#83FF08",
         "yellow": "#FF8308",
@@ -82,7 +82,7 @@
         "blue": "#1E8EFF",
         "magenta": "#8E1EFF",
         "cyan": "#1EFF8E",
-        "white": "#C2C2C2"
+        "white": "#B4E1FD"
       }
     }
   },
@@ -94,7 +94,7 @@
         "foreground": "#B4E1FD"
       },
       "normal": {
-        "black": "#3F3F3F",
+        "black": "#1F1305",
         "red": "#FF0883",
         "green": "#83FF08",
         "yellow": "#FF8308",
@@ -111,7 +111,7 @@
         "blue": "#1E8EFF",
         "magenta": "#8E1EFF",
         "cyan": "#1EFF8E",
-        "white": "#C4C4C4"
+        "white": "#B4E1FD"
       }
     }
   },
@@ -123,7 +123,7 @@
         "foreground": "#F8DCC0"
       },
       "normal": {
-        "black": "#050404",
+        "black": "#1F1D45",
         "red": "#BD0013",
         "green": "#4AB118",
         "yellow": "#E7741E",
@@ -140,7 +140,7 @@
         "blue": "#1997C6",
         "magenta": "#9B5953",
         "cyan": "#C8FAF4",
-        "white": "#F6F5FB"
+        "white": "#F8DCC0"
       }
     }
   },
@@ -152,7 +152,7 @@
         "foreground": "#D0D0D0"
       },
       "normal": {
-        "black": "#151515",
+        "black": "#222222",
         "red": "#A53C23",
         "green": "#7B9246",
         "yellow": "#D3A04D",
@@ -169,7 +169,7 @@
         "blue": "#547C99",
         "magenta": "#9F4E85",
         "cyan": "#7DD6CF",
-        "white": "#F5F5F5"
+        "white": "#D0D0D0"
       }
     }
   },
@@ -181,7 +181,7 @@
         "foreground": "#637D75"
       },
       "normal": {
-        "black": "#112616",
+        "black": "#0F1610",
         "red": "#7F2B27",
         "green": "#2F7E25",
         "yellow": "#717F24",
@@ -198,7 +198,7 @@
         "blue": "#00AAE0",
         "magenta": "#0058E0",
         "cyan": "#00E0C4",
-        "white": "#73FA91"
+        "white": "#637D75"
       }
     }
   },
@@ -210,7 +210,7 @@
         "foreground": "#BCBCBC"
       },
       "normal": {
-        "black": "#1C1C1C",
+        "black": "#262626",
         "red": "#AF5F5F",
         "green": "#5F875F",
         "yellow": "#87875F",
@@ -227,7 +227,7 @@
         "blue": "#8FAFD7",
         "magenta": "#8787AF",
         "cyan": "#5FAFAF",
-        "white": "#FFFFFF"
+        "white": "#BCBCBC"
       }
     }
   },
@@ -239,7 +239,7 @@
         "foreground": "#FFFAF4"
       },
       "normal": {
-        "black": "#232323",
+        "black": "#0E1019",
         "red": "#FF000F",
         "green": "#8CE10B",
         "yellow": "#FFB900",
@@ -256,7 +256,7 @@
         "blue": "#0092FF",
         "magenta": "#9A5FEB",
         "cyan": "#67FFF0",
-        "white": "#FFFFFF"
+        "white": "#FFFAF4"
       }
     }
   },
@@ -268,7 +268,7 @@
         "foreground": "#DDEEDD"
       },
       "normal": {
-        "black": "#3D352A",
+        "black": "#1C1C1C",
         "red": "#CD5C5C",
         "green": "#86AF80",
         "yellow": "#E8AE5B",
@@ -285,7 +285,7 @@
         "blue": "#87CEEB",
         "magenta": "#996600",
         "cyan": "#B0C4DE",
-        "white": "#DDCCBB"
+        "white": "#DDEEDD"
       }
     }
   },
@@ -297,7 +297,7 @@
         "foreground": "#9B9FA9"
       },
       "normal": {
-        "black": "#111317",
+        "black": "#1A1D23",
         "red": "#F8747E",
         "green": "#75AD47",
         "yellow": "#D09214",
@@ -314,7 +314,7 @@
         "blue": "#8DC3F1",
         "magenta": "#DEAEED",
         "cyan": "#27FFDF",
-        "white": "#CACCD3"
+        "white": "#9B9FA9"
       }
     }
   },
@@ -326,7 +326,7 @@
         "foreground": "#7E7887"
       },
       "normal": {
-        "black": "#BE4678",
+        "black": "#19171C",
         "red": "#BE4678",
         "green": "#2A9292",
         "yellow": "#A06E3B",
@@ -343,7 +343,7 @@
         "blue": "#955AE7",
         "magenta": "#BF40BF",
         "cyan": "#398BC6",
-        "white": "#EFECF4"
+        "white": "#7E7887"
       }
     }
   },
@@ -355,7 +355,7 @@
         "foreground": "#999580"
       },
       "normal": {
-        "black": "#D73737",
+        "black": "#20201D",
         "red": "#D73737",
         "green": "#60AC39",
         "yellow": "#AE9513",
@@ -372,7 +372,7 @@
         "blue": "#B854D4",
         "magenta": "#D43552",
         "cyan": "#1FAD83",
-        "white": "#FEFBEC"
+        "white": "#999580"
       }
     }
   },
@@ -384,7 +384,7 @@
         "foreground": "#878573"
       },
       "normal": {
-        "black": "#BA6236",
+        "black": "#22221B",
         "red": "#BA6236",
         "green": "#7D9726",
         "yellow": "#A5980D",
@@ -401,7 +401,7 @@
         "blue": "#5F9182",
         "magenta": "#9D6C7C",
         "cyan": "#5B9D48",
-        "white": "#F4F3EC"
+        "white": "#878573"
       }
     }
   },
@@ -413,7 +413,7 @@
         "foreground": "#9C9491"
       },
       "normal": {
-        "black": "#F22C40",
+        "black": "#1B1918",
         "red": "#F22C40",
         "green": "#7B9726",
         "yellow": "#C38418",
@@ -430,7 +430,7 @@
         "blue": "#6666EA",
         "magenta": "#C33FF3",
         "cyan": "#3D97B8",
-        "white": "#F1EFEE"
+        "white": "#9C9491"
       }
     }
   },
@@ -442,7 +442,7 @@
         "foreground": "#9E8F9E"
       },
       "normal": {
-        "black": "#CA402B",
+        "black": "#1B181B",
         "red": "#CA402B",
         "green": "#918B3B",
         "yellow": "#BB8A35",
@@ -459,7 +459,7 @@
         "blue": "#7B59C0",
         "magenta": "#CC33CC",
         "cyan": "#159393",
-        "white": "#F7F3F7"
+        "white": "#9E8F9E"
       }
     }
   },
@@ -471,7 +471,7 @@
         "foreground": "#7195A8"
       },
       "normal": {
-        "black": "#D22D72",
+        "black": "#161B1D",
         "red": "#D22D72",
         "green": "#568C3B",
         "yellow": "#8A8A0F",
@@ -488,7 +488,7 @@
         "blue": "#6B6BB8",
         "magenta": "#B72DD2",
         "cyan": "#2D8F6F",
-        "white": "#EBF8FF"
+        "white": "#7195A8"
       }
     }
   },
@@ -500,7 +500,7 @@
         "foreground": "#7E7777"
       },
       "normal": {
-        "black": "#CA4949",
+        "black": "#1B1818",
         "red": "#CA4949",
         "green": "#4B8B8B",
         "yellow": "#A06E3B",
@@ -517,7 +517,7 @@
         "blue": "#8464C4",
         "magenta": "#BD5187",
         "cyan": "#5485B6",
-        "white": "#F4ECEC"
+        "white": "#7E7777"
       }
     }
   },
@@ -529,7 +529,7 @@
         "foreground": "#78877D"
       },
       "normal": {
-        "black": "#B16139",
+        "black": "#171C19",
         "red": "#B16139",
         "green": "#489963",
         "yellow": "#A07E3B",
@@ -546,7 +546,7 @@
         "blue": "#55859B",
         "magenta": "#867469",
         "cyan": "#1C9AA0",
-        "white": "#ECF4EE"
+        "white": "#78877D"
       }
     }
   },
@@ -558,7 +558,7 @@
         "foreground": "#809980"
       },
       "normal": {
-        "black": "#E6193C",
+        "black": "#131513",
         "red": "#E6193C",
         "green": "#29A329",
         "yellow": "#98981B",
@@ -575,7 +575,7 @@
         "blue": "#AD2BEE",
         "magenta": "#E619C3",
         "cyan": "#1999B3",
-        "white": "#F4FBF4"
+        "white": "#809980"
       }
     }
   },
@@ -587,7 +587,7 @@
         "foreground": "#898EA4"
       },
       "normal": {
-        "black": "#C94922",
+        "black": "#202746",
         "red": "#C94922",
         "green": "#AC9739",
         "yellow": "#C08B30",
@@ -604,7 +604,7 @@
         "blue": "#6679CC",
         "magenta": "#9C637A",
         "cyan": "#22A2C9",
-        "white": "#F5F7FF"
+        "white": "#898EA4"
       }
     }
   },
@@ -616,7 +616,7 @@
         "foreground": "#C5C8C6"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#161719",
         "red": "#FD5FF1",
         "green": "#87C38A",
         "yellow": "#FFD7B1",
@@ -633,7 +633,7 @@
         "blue": "#96CBFE",
         "magenta": "#B9B6FC",
         "cyan": "#85BEFD",
-        "white": "#E0E0E0"
+        "white": "#C5C8C6"
       }
     }
   },
@@ -645,7 +645,7 @@
         "foreground": "#EDECEE"
       },
       "normal": {
-        "black": "#110F18",
+        "black": "#15141B",
         "red": "#FF6767",
         "green": "#61FFCA",
         "yellow": "#FFCA85",
@@ -703,7 +703,7 @@
         "foreground": "#575F66"
       },
       "normal": {
-        "black": "#575F66",
+        "black": "#FAFAFA",
         "red": "#F51818",
         "green": "#86B300",
         "yellow": "#F2AE49",
@@ -720,7 +720,7 @@
         "blue": "#399EE6",
         "magenta": "#A37ACC",
         "cyan": "#4CBF99",
-        "white": "#FAFAFA"
+        "white": "#575F66"
       }
     }
   },
@@ -761,7 +761,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#09111A",
         "red": "#AC6D74",
         "green": "#74AC6D",
         "yellow": "#ACA46D",
@@ -778,7 +778,7 @@
         "blue": "#B8BCD6",
         "magenta": "#D3B8D6",
         "cyan": "#B8D6D3",
-        "white": "#FFFFFF"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -807,7 +807,7 @@
         "blue": "#706b6d",
         "magenta": "#f0a8c1",
         "cyan": "#c39622",
-        "white": "#ffebf2"
+        "white": "#9f999b"
       }
     }
   },
@@ -836,7 +836,7 @@
         "blue": "#908774",
         "magenta": "#ddcba6",
         "cyan": "#e58748",
-        "white": "#f2ead9"
+        "white": "#ada594"
       }
     }
   },
@@ -865,7 +865,7 @@
         "blue": "#5e6587",
         "magenta": "#c3cdfe",
         "cyan": "#5cbcd6",
-        "white": "#e1e6ff"
+        "white": "#9094a7"
       }
     }
   },
@@ -894,7 +894,7 @@
         "blue": "#796b63",
         "magenta": "#dfb99f",
         "cyan": "#cda956",
-        "white": "#fff3eb"
+        "white": "#b5a9a1"
       }
     }
   },
@@ -923,7 +923,7 @@
         "blue": "#787391",
         "magenta": "#d9d2fe",
         "cyan": "#ffa142",
-        "white": "#eeebff"
+        "white": "#a4a1b5"
       }
     }
   },
@@ -952,7 +952,7 @@
         "blue": "#667a77",
         "magenta": "#88f2e0",
         "cyan": "#25d46e",
-        "white": "#a8fff1"
+        "white": "#8ea4a0"
       }
     }
   },
@@ -981,7 +981,7 @@
         "blue": "#5e6e5e",
         "magenta": "#c8e4c8",
         "cyan": "#b1c44f",
-        "white": "#f0fff0"
+        "white": "#a1b5a1"
       }
     }
   },
@@ -1010,7 +1010,7 @@
         "blue": "#696d69",
         "magenta": "#b7e3b5",
         "cyan": "#dd843c",
-        "white": "#dcf0db"
+        "white": "#969c96"
       }
     }
   },
@@ -1039,7 +1039,7 @@
         "blue": "#6f6b70",
         "magenta": "#eaa8f0",
         "cyan": "#c38022",
-        "white": "#fdebff"
+        "white": "#9e999f"
       }
     }
   },
@@ -1068,7 +1068,7 @@
         "blue": "#467686",
         "magenta": "#a5d8e9",
         "cyan": "#c4b031",
-        "white": "#e1f7ff"
+        "white": "#7ba8b7"
       }
     }
   },
@@ -1097,7 +1097,7 @@
         "blue": "#6e658b",
         "magenta": "#dcd2fe",
         "cyan": "#ca80ff",
-        "white": "#efebff"
+        "white": "#9992b0"
       }
     }
   },
@@ -1126,7 +1126,7 @@
         "blue": "#6a686e",
         "magenta": "#e5dbff",
         "cyan": "#69b5f7",
-        "white": "#f4f0ff"
+        "white": "#97959d"
       }
     }
   },
@@ -1155,7 +1155,7 @@
         "blue": "#466b86",
         "magenta": "#afddfe",
         "cyan": "#73b234",
-        "white": "#d1ecff"
+        "white": "#7b9eb7"
       }
     }
   },
@@ -1184,7 +1184,7 @@
         "blue": "#707a8f",
         "magenta": "#b7c9eb",
         "cyan": "#9a7c42",
-        "white": "#dee6f7"
+        "white": "#8d95a5"
       }
     }
   },
@@ -1213,7 +1213,7 @@
         "blue": "#86797b",
         "magenta": "#dec9cc",
         "cyan": "#f77c64",
-        "white": "#f0dbdf"
+        "white": "#a5979a"
       }
     }
   },
@@ -1242,7 +1242,7 @@
         "blue": "#706383",
         "magenta": "#e4d2fe",
         "cyan": "#f36f68",
-        "white": "#f3ebff"
+        "white": "#9a90a7"
       }
     }
   },
@@ -1271,7 +1271,7 @@
         "blue": "#716774",
         "magenta": "#dfcbe6",
         "cyan": "#ec8d55",
-        "white": "#f2e3f7"
+        "white": "#9f95a3"
       }
     }
   },
@@ -1300,7 +1300,7 @@
         "blue": "#738191",
         "magenta": "#afd4fe",
         "cyan": "#0db57d",
-        "white": "#ebf4ff"
+        "white": "#a1aab5"
       }
     }
   },
@@ -1329,7 +1329,7 @@
         "blue": "#737391",
         "magenta": "#cecee3",
         "cyan": "#e66e33",
-        "white": "#ebebff"
+        "white": "#a1a1b5"
       }
     }
   },
@@ -1358,7 +1358,7 @@
         "blue": "#5b6080",
         "magenta": "#d2d8fe",
         "cyan": "#f764a1",
-        "white": "#ebedff"
+        "white": "#878ba6"
       }
     }
   },
@@ -1387,7 +1387,7 @@
         "blue": "#f8cac3",
         "magenta": "#e8a02c",
         "cyan": "#fbbab1",
-        "white": "#f9f6f6"
+        "white": "#a19391"
       }
     }
   },
@@ -1416,7 +1416,7 @@
         "blue": "#f7cdb6",
         "magenta": "#dcc218",
         "cyan": "#f5c1a3",
-        "white": "#f9f7f6"
+        "white": "#a29790"
       }
     }
   },
@@ -1445,7 +1445,7 @@
         "blue": "#f5d8a8",
         "magenta": "#c5dc18",
         "cyan": "#f3cd91",
-        "white": "#f9f8f6"
+        "white": "#a39b8f"
       }
     }
   },
@@ -1474,7 +1474,7 @@
         "blue": "#f6edb1",
         "magenta": "#95dc18",
         "cyan": "#f2e58c",
-        "white": "#f9f8f6"
+        "white": "#a2a090"
       }
     }
   },
@@ -1503,7 +1503,7 @@
         "blue": "#eef6b1",
         "magenta": "#69d425",
         "cyan": "#e6f28c",
-        "white": "#f9f9f6"
+        "white": "#a0a290"
       }
     }
   },
@@ -1532,7 +1532,7 @@
         "blue": "#ddf6b1",
         "magenta": "#18d85e",
         "cyan": "#cdf28c",
-        "white": "#f8f9f6"
+        "white": "#9ba191"
       }
     }
   },
@@ -1561,7 +1561,7 @@
         "blue": "#b5f2bc",
         "magenta": "#3ccadd",
         "cyan": "#97eda1",
-        "white": "#f6f9f6"
+        "white": "#949e95"
       }
     }
   },
@@ -1590,7 +1590,7 @@
         "blue": "#adf0e7",
         "magenta": "#88b4fc",
         "cyan": "#93ece0",
-        "white": "#f6f9f8"
+        "white": "#8ea4a1"
       }
     }
   },
@@ -1619,7 +1619,7 @@
         "blue": "#c7dcff",
         "magenta": "#aba1f7",
         "cyan": "#c2d9ff",
-        "white": "#f6f7f9"
+        "white": "#8995a9"
       }
     }
   },
@@ -1648,7 +1648,7 @@
         "blue": "#d0d5fb",
         "magenta": "#b792f6",
         "cyan": "#c6cdfb",
-        "white": "#f6f6f9"
+        "white": "#9092a2"
       }
     }
   },
@@ -1677,7 +1677,7 @@
         "blue": "#d9d5fc",
         "magenta": "#c988f2",
         "cyan": "#d1cbfb",
-        "white": "#f6f6f9"
+        "white": "#95949e"
       }
     }
   },
@@ -1706,7 +1706,7 @@
         "blue": "#ddcbfb",
         "magenta": "#e17ef1",
         "cyan": "#d6c2fa",
-        "white": "#f7f6f9"
+        "white": "#98949e"
       }
     }
   },
@@ -1735,7 +1735,7 @@
         "blue": "#e6c8f9",
         "magenta": "#f17ec7",
         "cyan": "#e0baf7",
-        "white": "#f8f6f9"
+        "white": "#9a949e"
       }
     }
   },
@@ -1764,7 +1764,7 @@
         "blue": "#f1c3f8",
         "magenta": "#f17eaa",
         "cyan": "#edb1f6",
-        "white": "#f8f6f9"
+        "white": "#9d949e"
       }
     }
   },
@@ -1793,7 +1793,7 @@
         "blue": "#f8c3f2",
         "magenta": "#f17e8e",
         "cyan": "#f6b1ee",
-        "white": "#f9f6f8"
+        "white": "#9e949d"
       }
     }
   },
@@ -1822,7 +1822,7 @@
         "blue": "#f8bfd5",
         "magenta": "#f18c7e",
         "cyan": "#f6b1cc",
-        "white": "#f9f6f7"
+        "white": "#9e9498"
       }
     }
   },
@@ -1851,7 +1851,7 @@
         "blue": "#f5d8a8",
         "magenta": "#1ed2ba",
         "cyan": "#f3cd91",
-        "white": "#f9f8f6"
+        "white": "#a39b8f"
       }
     }
   },
@@ -1880,7 +1880,7 @@
         "blue": "#bbe4fb",
         "magenta": "#a0acf8",
         "cyan": "#b1e0fb",
-        "white": "#f6f8f9"
+        "white": "#8a9da8"
       }
     }
   },
@@ -1909,7 +1909,7 @@
         "blue": "#f8bfd5",
         "magenta": "#f18c7e",
         "cyan": "#f6b1cc",
-        "white": "#f9f6f7"
+        "white": "#9e9498"
       }
     }
   },
@@ -1921,7 +1921,7 @@
         "foreground": "#45373C"
       },
       "normal": {
-        "black": "#20111B",
+        "black": "#D5CCBA",
         "red": "#BE100E",
         "green": "#858162",
         "yellow": "#EAA549",
@@ -1938,7 +1938,7 @@
         "blue": "#426A79",
         "magenta": "#97522C",
         "cyan": "#989A9C",
-        "white": "#D5CCBA"
+        "white": "#45373C"
       }
     }
   },
@@ -1967,7 +1967,7 @@
         "blue": "#426A79",
         "magenta": "#97522C",
         "cyan": "#989A9C",
-        "white": "#D5CCBA"
+        "white": "#968C83"
       }
     }
   },
@@ -1979,7 +1979,7 @@
         "foreground": "#A9BED8"
       },
       "normal": {
-        "black": "#2C2423",
+        "black": "#012849",
         "red": "#F557A0",
         "green": "#A9EE55",
         "yellow": "#F5A255",
@@ -1996,7 +1996,7 @@
         "blue": "#81B3EC",
         "magenta": "#BB79EC",
         "cyan": "#81EEB2",
-        "white": "#F5EEEC"
+        "white": "#A9BED8"
       }
     }
   },
@@ -2008,7 +2008,7 @@
         "foreground": "#E0DBB7"
       },
       "normal": {
-        "black": "#573D26",
+        "black": "#2A1F1D",
         "red": "#BE2D26",
         "green": "#6BA18A",
         "yellow": "#E99D2A",
@@ -2025,7 +2025,7 @@
         "blue": "#B8D3ED",
         "magenta": "#D19ECB",
         "cyan": "#93CFD7",
-        "white": "#FFF9D5"
+        "white": "#E0DBB7"
       }
     }
   },
@@ -2037,7 +2037,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#0D1926",
         "red": "#B87A7A",
         "green": "#7AB87A",
         "yellow": "#B8B87A",
@@ -2054,7 +2054,7 @@
         "blue": "#BDBDDB",
         "magenta": "#DBBDDB",
         "cyan": "#BDDBDB",
-        "white": "#FFFFFF"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -2066,7 +2066,7 @@
         "foreground": "#C5F2FF"
       },
       "normal": {
-        "black": "#292D3E",
+        "black": "#006984",
         "red": "#FF8288",
         "green": "#B4E88D",
         "yellow": "#F4D69F",
@@ -2083,7 +2083,7 @@
         "blue": "#9CC4FF",
         "magenta": "#DDB0F6",
         "cyan": "#A3F7FF",
-        "white": "#FFFFFF"
+        "white": "#C5F2FF"
       }
     }
   },
@@ -2095,7 +2095,7 @@
         "foreground": "#383A42"
       },
       "normal": {
-        "black": "#D5D6DD",
+        "black": "#F9F9F9",
         "red": "#D52753",
         "green": "#23974A",
         "yellow": "#DF631C",
@@ -2112,7 +2112,7 @@
         "blue": "#0099E1",
         "magenta": "#CE33C0",
         "cyan": "#6D93BB",
-        "white": "#26272D"
+        "white": "#383A42"
       }
     }
   },
@@ -2124,7 +2124,7 @@
         "foreground": "#383A42"
       },
       "normal": {
-        "black": "#E4E5F1",
+        "black": "#F9F9F9",
         "red": "#D52753",
         "green": "#23974A",
         "yellow": "#DF631C",
@@ -2141,7 +2141,7 @@
         "blue": "#0099E1",
         "magenta": "#CE33C0",
         "cyan": "#6D93BB",
-        "white": "#26272D"
+        "white": "#383A42"
       }
     }
   },
@@ -2153,7 +2153,7 @@
         "foreground": "#FFFF4E"
       },
       "normal": {
-        "black": "#4F4F4F",
+        "black": "#0000A4",
         "red": "#FF6C60",
         "green": "#A8FF60",
         "yellow": "#FFFFB6",
@@ -2170,7 +2170,7 @@
         "blue": "#B5DCFF",
         "magenta": "#FF9CFE",
         "cyan": "#DFDFFE",
-        "white": "#FFFFFF"
+        "white": "#FFFF4E"
       }
     }
   },
@@ -2182,7 +2182,7 @@
         "foreground": "#362C24"
       },
       "normal": {
-        "black": "#362C24",
+        "black": "#F1EBE6",
         "red": "#B10B00",
         "green": "#007232",
         "yellow": "#8B4C00",
@@ -2199,7 +2199,7 @@
         "blue": "#0074E1",
         "magenta": "#C300BD",
         "cyan": "#008697",
-        "white": "#EAE1DA"
+        "white": "#362C24"
       }
     }
   },
@@ -2211,7 +2211,7 @@
         "foreground": "#17A88B"
       },
       "normal": {
-        "black": "#1E2229",
+        "black": "#080D14",
         "red": "#ED1515",
         "green": "#44853A",
         "yellow": "#F67400",
@@ -2228,7 +2228,7 @@
         "blue": "#3DAEE9",
         "magenta": "#8E44AD",
         "cyan": "#16A085",
-        "white": "#FFFFFF"
+        "white": "#17A88B"
       }
     }
   },
@@ -2257,7 +2257,7 @@
         "blue": "#3DAEE9",
         "magenta": "#8E44AD",
         "cyan": "#16A085",
-        "white": "#FFFFFF"
+        "white": "#292F34"
       }
     }
   },
@@ -2286,7 +2286,7 @@
         "blue": "#3DAEE9",
         "magenta": "#8E44AD",
         "cyan": "#16A085",
-        "white": "#FFFFFF"
+        "white": "#BBBBBB"
       }
     }
   },
@@ -2315,7 +2315,7 @@
         "blue": "#3DAEE9",
         "magenta": "#8E44AD",
         "cyan": "#16A085",
-        "white": "#FFFFFF"
+        "white": "#17A88B"
       }
     }
   },
@@ -2344,7 +2344,7 @@
         "blue": "#3DAEE9",
         "magenta": "#8E44AD",
         "cyan": "#16A085",
-        "white": "#FFFFFF"
+        "white": "#FCFCFC"
       }
     }
   },
@@ -2356,7 +2356,7 @@
         "foreground": "#E6E1DC"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#2B2B2B",
         "red": "#DA4939",
         "green": "#519F50",
         "yellow": "#FFD24A",
@@ -2373,7 +2373,7 @@
         "blue": "#9FCEF0",
         "magenta": "#FFFFFF",
         "cyan": "#A0CEF0",
-        "white": "#FFFFFF"
+        "white": "#E6E1DC"
       }
     }
   },
@@ -2385,7 +2385,7 @@
         "foreground": "#D6DBE5"
       },
       "normal": {
-        "black": "#1F1F1F",
+        "black": "#131313",
         "red": "#F81118",
         "green": "#2DC55E",
         "yellow": "#ECBA0F",
@@ -2402,7 +2402,7 @@
         "blue": "#1081D6",
         "magenta": "#5350B9",
         "cyan": "#0F7DDB",
-        "white": "#FFFFFF"
+        "white": "#D6DBE5"
       }
     }
   },
@@ -2414,7 +2414,7 @@
         "foreground": "#F2F2F2"
       },
       "normal": {
-        "black": "#8C7E78",
+        "black": "#4B3B3C",
         "red": "#E68A8A",
         "green": "#99CC99",
         "yellow": "#FAD7A0",
@@ -2443,7 +2443,7 @@
         "foreground": "#7869C4"
       },
       "normal": {
-        "black": "#090300",
+        "black": "#40318D",
         "red": "#883932",
         "green": "#55A049",
         "yellow": "#BFCE72",
@@ -2460,7 +2460,7 @@
         "blue": "#40318D",
         "magenta": "#8B3F96",
         "cyan": "#67B6BD",
-        "white": "#F7F7F7"
+        "white": "#7869C4"
       }
     }
   },
@@ -2472,7 +2472,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#09111A",
         "red": "#CA274D",
         "green": "#4DCA27",
         "yellow": "#CAA427",
@@ -2489,7 +2489,7 @@
         "blue": "#8DA3E9",
         "magenta": "#D48DE9",
         "cyan": "#8DE9D4",
-        "white": "#FFFFFF"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -2518,7 +2518,7 @@
         "blue": "#3B78FF",
         "magenta": "#B4009E",
         "cyan": "#61D6D6",
-        "white": "#F2F2F2"
+        "white": "#CCCCCC"
       }
     }
   },
@@ -2530,7 +2530,7 @@
         "foreground": "#C6D0F5"
       },
       "normal": {
-        "black": "#51576D",
+        "black": "#303446",
         "red": "#E78284",
         "green": "#A6D189",
         "yellow": "#E5C890",
@@ -2547,7 +2547,7 @@
         "blue": "#8CAAEE",
         "magenta": "#F4B8E4",
         "cyan": "#81C8BE",
-        "white": "#A5ADCE"
+        "white": "#C6D0F5"
       }
     }
   },
@@ -2559,7 +2559,7 @@
         "foreground": "#4C4F69"
       },
       "normal": {
-        "black": "#5C5F77",
+        "black": "#EFF1F5",
         "red": "#D20F39",
         "green": "#40A02B",
         "yellow": "#DF8E1D",
@@ -2576,7 +2576,7 @@
         "blue": "#1E66F5",
         "magenta": "#EA76CB",
         "cyan": "#179299",
-        "white": "#BCC0CC"
+        "white": "#4C4F69"
       }
     }
   },
@@ -2588,7 +2588,7 @@
         "foreground": "#CAD3F5"
       },
       "normal": {
-        "black": "#494D64",
+        "black": "#24273A",
         "red": "#ED8796",
         "green": "#A6DA95",
         "yellow": "#EED49F",
@@ -2605,7 +2605,7 @@
         "blue": "#8AADF4",
         "magenta": "#F5BDE6",
         "cyan": "#8BD5CA",
-        "white": "#A5ADCB"
+        "white": "#CAD3F5"
       }
     }
   },
@@ -2617,7 +2617,7 @@
         "foreground": "#CDD6F4"
       },
       "normal": {
-        "black": "#45475A",
+        "black": "#1E1E2E",
         "red": "#F38BA8",
         "green": "#A6E3A1",
         "yellow": "#F9E2AF",
@@ -2634,7 +2634,7 @@
         "blue": "#89B4FA",
         "magenta": "#F5C2E7",
         "cyan": "#94E2D5",
-        "white": "#A6ADC8"
+        "white": "#CDD6F4"
       }
     }
   },
@@ -2646,7 +2646,7 @@
         "foreground": "#D4D4D4"
       },
       "normal": {
-        "black": "#646464",
+        "black": "#2D2D2D",
         "red": "#F58E8E",
         "green": "#A9D3AB",
         "yellow": "#FED37E",
@@ -2675,7 +2675,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#29262F",
         "red": "#C37372",
         "green": "#72C373",
         "yellow": "#C2C372",
@@ -2692,7 +2692,7 @@
         "blue": "#AAAADB",
         "magenta": "#DBAADA",
         "cyan": "#AADADB",
-        "white": "#FFFFFF"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -2721,7 +2721,7 @@
         "blue": "#366B71",
         "magenta": "#4E5165",
         "cyan": "#458587",
-        "white": "#C8BB97"
+        "white": "#DEDEDE"
       }
     }
   },
@@ -2733,7 +2733,7 @@
         "foreground": "#AEA47A"
       },
       "normal": {
-        "black": "#181818",
+        "black": "#191C27",
         "red": "#810009",
         "green": "#48513B",
         "yellow": "#CC8B3F",
@@ -2750,7 +2750,7 @@
         "blue": "#3097C6",
         "magenta": "#D33061",
         "cyan": "#F3DBB2",
-        "white": "#F4F4F4"
+        "white": "#AEA47A"
       }
     }
   },
@@ -2762,7 +2762,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#41505E",
+        "black": "#171D23",
         "red": "#D95468",
         "green": "#8BD49C",
         "yellow": "#EBBF83",
@@ -2791,7 +2791,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#2E3436",
+        "black": "#300A24",
         "red": "#CC0000",
         "green": "#4E9A06",
         "yellow": "#C4A000",
@@ -2808,7 +2808,7 @@
         "blue": "#729FCF",
         "magenta": "#AD7FA8",
         "cyan": "#34E2E2",
-        "white": "#EEEEEC"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -2820,7 +2820,7 @@
         "foreground": "#262626"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FFFFFF",
         "red": "#F8282A",
         "green": "#328A5D",
         "yellow": "#FA701D",
@@ -2837,7 +2837,7 @@
         "blue": "#1670FF",
         "magenta": "#E900B0",
         "cyan": "#3AD5CE",
-        "white": "#EEEEEC"
+        "white": "#262626"
       }
     }
   },
@@ -2849,7 +2849,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#132738",
         "red": "#FF0000",
         "green": "#38DE21",
         "yellow": "#FFE50A",
@@ -2878,7 +2878,7 @@
         "foreground": "#8FF586"
       },
       "normal": {
-        "black": "#142631",
+        "black": "#142838",
         "red": "#FF2320",
         "green": "#3BA5FF",
         "yellow": "#E9E75C",
@@ -2907,7 +2907,7 @@
         "foreground": "#005F87"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FFFFFF",
         "red": "#D70000",
         "green": "#5FAF00",
         "yellow": "#5FAF00",
@@ -2924,7 +2924,7 @@
         "blue": "#0087AF",
         "magenta": "#0087AF",
         "cyan": "#0087AF",
-        "white": "#FFFFFF"
+        "white": "#005F87"
       }
     }
   },
@@ -2936,7 +2936,7 @@
         "foreground": "#68525A"
       },
       "normal": {
-        "black": "#2B1B1D",
+        "black": "#150707",
         "red": "#91002B",
         "green": "#579524",
         "yellow": "#AB311B",
@@ -2953,7 +2953,7 @@
         "blue": "#CFC9FF",
         "magenta": "#FC6CBA",
         "cyan": "#FFCEAF",
-        "white": "#B0949D"
+        "white": "#68525A"
       }
     }
   },
@@ -2994,7 +2994,7 @@
         "foreground": "#BABABA"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#222324",
         "red": "#E8341C",
         "green": "#68C256",
         "yellow": "#F2D42C",
@@ -3052,7 +3052,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#4D4D4D",
+        "black": "#333333",
         "red": "#FF2B2B",
         "green": "#98FB98",
         "yellow": "#F0E68C",
@@ -3081,7 +3081,7 @@
         "foreground": "#B9BCBA"
       },
       "normal": {
-        "black": "#3A3D43",
+        "black": "#1F1F1F",
         "red": "#BE3F48",
         "green": "#879A3B",
         "yellow": "#C5A635",
@@ -3098,7 +3098,7 @@
         "blue": "#186DE3",
         "magenta": "#FB0067",
         "cyan": "#2E706D",
-        "white": "#FDFFB9"
+        "white": "#B9BCBA"
       }
     }
   },
@@ -3139,7 +3139,7 @@
         "foreground": "#f8f8f2"
       },
       "normal": {
-        "black": "#44475A",
+        "black": "#282A36",
         "red": "#FF5555",
         "green": "#50FA7B",
         "yellow": "#FFB86C",
@@ -3156,7 +3156,7 @@
         "blue": "#8BE9FD",
         "magenta": "#BD93F9",
         "cyan": "#FF79C6",
-        "white": "#FFFFFF"
+        "white": "#f8f8f2"
       }
     }
   },
@@ -3168,7 +3168,7 @@
         "foreground": "#E5C7A9"
       },
       "normal": {
-        "black": "#121418",
+        "black": "#292520",
         "red": "#C94234",
         "green": "#85C54C",
         "yellow": "#F5AE2E",
@@ -3185,7 +3185,7 @@
         "blue": "#5FDAFF",
         "magenta": "#FF9269",
         "cyan": "#84F088",
-        "white": "#F6F7EC"
+        "white": "#E5C7A9"
       }
     }
   },
@@ -3197,7 +3197,7 @@
         "foreground": "#807A74"
       },
       "normal": {
-        "black": "#3C3C30",
+        "black": "#22211D",
         "red": "#98290F",
         "green": "#479A43",
         "yellow": "#7F7111",
@@ -3214,7 +3214,7 @@
         "blue": "#79D9D9",
         "magenta": "#CD7C54",
         "cyan": "#59D599",
-        "white": "#FFF1E9"
+        "white": "#807A74"
       }
     }
   },
@@ -3226,7 +3226,7 @@
         "foreground": "#F2F2F2"
       },
       "normal": {
-        "black": "#303030",
+        "black": "#101010",
         "red": "#E1321A",
         "green": "#6AB017",
         "yellow": "#FFC005",
@@ -3243,7 +3243,7 @@
         "blue": "#0071FF",
         "magenta": "#FF1D62",
         "cyan": "#4BB8FD",
-        "white": "#A020F0"
+        "white": "#F2F2F2"
       }
     }
   },
@@ -3255,7 +3255,7 @@
         "foreground": "#F2F2F2"
       },
       "normal": {
-        "black": "#303030",
+        "black": "#4A453E",
         "red": "#E1321A",
         "green": "#6AB017",
         "yellow": "#FFC005",
@@ -3272,7 +3272,7 @@
         "blue": "#0071FF",
         "magenta": "#FF1D62",
         "cyan": "#4BB8FD",
-        "white": "#A020F0"
+        "white": "#F2F2F2"
       }
     }
   },
@@ -3284,7 +3284,7 @@
         "foreground": "#F2F2F2"
       },
       "normal": {
-        "black": "#303030",
+        "black": "#041A3B",
         "red": "#E1321A",
         "green": "#6AB017",
         "yellow": "#FFC005",
@@ -3301,7 +3301,7 @@
         "blue": "#0071FF",
         "magenta": "#FF1D62",
         "cyan": "#4BB8FD",
-        "white": "#A020F0"
+        "white": "#F2F2F2"
       }
     }
   },
@@ -3313,7 +3313,7 @@
         "foreground": "#B8A898"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#2A211C",
         "red": "#CC0000",
         "green": "#1A921C",
         "yellow": "#F0E53A",
@@ -3330,7 +3330,7 @@
         "blue": "#43A8ED",
         "magenta": "#FF818A",
         "cyan": "#34E2E2",
-        "white": "#EEEEEC"
+        "white": "#B8A898"
       }
     }
   },
@@ -3342,7 +3342,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#353535",
+        "black": "#323232",
         "red": "#D25252",
         "green": "#A5C261",
         "yellow": "#FFC66D",
@@ -3371,7 +3371,7 @@
         "foreground": "#DADADA"
       },
       "normal": {
-        "black": "#232A2D",
+        "black": "#141B1E",
         "red": "#E57474",
         "green": "#8CCF7E",
         "yellow": "#E5C76B",
@@ -3388,7 +3388,7 @@
         "blue": "#71BAF2",
         "magenta": "#CE89DF",
         "cyan": "#67CBE7",
-        "white": "#BDC3C2"
+        "white": "#DADADA"
       }
     }
   },
@@ -3400,7 +3400,7 @@
         "foreground": "#D3C6AA"
       },
       "normal": {
-        "black": "#2E383C",
+        "black": "#272E33",
         "red": "#E67E80",
         "green": "#A7C080",
         "yellow": "#DBBC7F",
@@ -3417,7 +3417,7 @@
         "blue": "#3A94C5",
         "magenta": "#DF69BA",
         "cyan": "#35A77C",
-        "white": "#DFDDC8"
+        "white": "#D3C6AA"
       }
     }
   },
@@ -3429,7 +3429,7 @@
         "foreground": "#D3C6AA"
       },
       "normal": {
-        "black": "#343F44",
+        "black": "#2D353B",
         "red": "#E67E80",
         "green": "#A7C080",
         "yellow": "#DBBC7F",
@@ -3446,7 +3446,7 @@
         "blue": "#3A94C5",
         "magenta": "#DF69BA",
         "cyan": "#35A77C",
-        "white": "#DFDDC8"
+        "white": "#D3C6AA"
       }
     }
   },
@@ -3458,7 +3458,7 @@
         "foreground": "#D3C6AA"
       },
       "normal": {
-        "black": "#3A464C",
+        "black": "#333C43",
         "red": "#E67E80",
         "green": "#A7C080",
         "yellow": "#DBBC7F",
@@ -3475,7 +3475,7 @@
         "blue": "#3A94C5",
         "magenta": "#DF69BA",
         "cyan": "#35A77C",
-        "white": "#DFDDC8"
+        "white": "#D3C6AA"
       }
     }
   },
@@ -3487,7 +3487,7 @@
         "foreground": "#5C6A72"
       },
       "normal": {
-        "black": "#5C6A72",
+        "black": "#FFFBEF",
         "red": "#F85552",
         "green": "#8DA101",
         "yellow": "#DFA000",
@@ -3504,7 +3504,7 @@
         "blue": "#7FBBB3",
         "magenta": "#D699B6",
         "cyan": "#83C092",
-        "white": "#D3C6AA"
+        "white": "#5C6A72"
       }
     }
   },
@@ -3516,7 +3516,7 @@
         "foreground": "#5C6A72"
       },
       "normal": {
-        "black": "#5C6A72",
+        "black": "#FDF6E3",
         "red": "#F85552",
         "green": "#8DA101",
         "yellow": "#DFA000",
@@ -3533,7 +3533,7 @@
         "blue": "#7FBBB3",
         "magenta": "#D699B6",
         "cyan": "#83C092",
-        "white": "#D3C6AA"
+        "white": "#5C6A72"
       }
     }
   },
@@ -3545,7 +3545,7 @@
         "foreground": "#5C6A72"
       },
       "normal": {
-        "black": "#5C6A72",
+        "black": "#F3EAD3",
         "red": "#F85552",
         "green": "#8DA101",
         "yellow": "#DFA000",
@@ -3562,7 +3562,7 @@
         "blue": "#7FBBB3",
         "magenta": "#D699B6",
         "cyan": "#83C092",
-        "white": "#D3C6AA"
+        "white": "#5C6A72"
       }
     }
   },
@@ -3591,7 +3591,7 @@
         "blue": "#C5A3FF",
         "magenta": "#8077A8",
         "cyan": "#C2FFFF",
-        "white": "#F8F8F0"
+        "white": "#C2FFDF"
       }
     }
   },
@@ -3603,7 +3603,7 @@
         "foreground": "#C2FFDF"
       },
       "normal": {
-        "black": "#42395D",
+        "black": "#5A5475",
         "red": "#A8757B",
         "green": "#FF857F",
         "yellow": "#E6C000",
@@ -3620,7 +3620,7 @@
         "blue": "#C5A3FF",
         "magenta": "#8077A8",
         "cyan": "#C2FFFF",
-        "white": "#F8F8F0"
+        "white": "#C2FFDF"
       }
     }
   },
@@ -3632,7 +3632,7 @@
         "foreground": "#ECF0FE"
       },
       "normal": {
-        "black": "#03073C",
+        "black": "#232537",
         "red": "#C6004A",
         "green": "#ACF157",
         "yellow": "#FECD5E",
@@ -3649,7 +3649,7 @@
         "blue": "#B2BEFA",
         "magenta": "#FDA5CD",
         "cyan": "#A5BD86",
-        "white": "#F6FFEC"
+        "white": "#ECF0FE"
       }
     }
   },
@@ -3661,7 +3661,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#1F2229",
+        "black": "#272A34",
         "red": "#D41919",
         "green": "#5EBDAB",
         "yellow": "#FEA44C",
@@ -3690,7 +3690,7 @@
         "foreground": "#1ABC9C"
       },
       "normal": {
-        "black": "#2C3E50",
+        "black": "#1F2D3A",
         "red": "#C0392B",
         "green": "#27AE60",
         "yellow": "#F39C12",
@@ -3707,7 +3707,7 @@
         "blue": "#3498DB",
         "magenta": "#9B59B6",
         "cyan": "#2AA198",
-        "white": "#ECF0F1"
+        "white": "#1ABC9C"
       }
     }
   },
@@ -3719,7 +3719,7 @@
         "foreground": "#B8DBEF"
       },
       "normal": {
-        "black": "#1D1D19",
+        "black": "#1D1F21",
         "red": "#F18339",
         "green": "#9FD364",
         "yellow": "#F4EF6D",
@@ -3736,7 +3736,7 @@
         "blue": "#61B9D0",
         "magenta": "#695ABC",
         "cyan": "#D63865",
-        "white": "#FFFFFF"
+        "white": "#B8DBEF"
       }
     }
   },
@@ -3748,7 +3748,7 @@
         "foreground": "#878580"
       },
       "normal": {
-        "black": "#282726",
+        "black": "#100F0F",
         "red": "#AF3029",
         "green": "#66800B",
         "yellow": "#AD8301",
@@ -3765,7 +3765,7 @@
         "blue": "#4385BE",
         "magenta": "#CE5D97",
         "cyan": "#3AA99F",
-        "white": "#FFFCF0"
+        "white": "#878580"
       }
     }
   },
@@ -3777,7 +3777,7 @@
         "foreground": "#100F0F"
       },
       "normal": {
-        "black": "#282726",
+        "black": "#FFFCF0",
         "red": "#AF3029",
         "green": "#66800B",
         "yellow": "#AD8301",
@@ -3794,7 +3794,7 @@
         "blue": "#4385BE",
         "magenta": "#CE5D97",
         "cyan": "#3AA99F",
-        "white": "#6F6E69"
+        "white": "#100F0F"
       }
     }
   },
@@ -3823,7 +3823,7 @@
         "blue": "#729FCF",
         "magenta": "#8F5902",
         "cyan": "#C4A000",
-        "white": "#5C3566"
+        "white": "#D7D7DB"
       }
     }
   },
@@ -3835,7 +3835,7 @@
         "foreground": "#94A3A5"
       },
       "normal": {
-        "black": "#073642",
+        "black": "#252E32",
         "red": "#DC322F",
         "green": "#859900",
         "yellow": "#B58900",
@@ -3852,7 +3852,7 @@
         "blue": "#268BD2",
         "magenta": "#D33682",
         "cyan": "#2AA198",
-        "white": "#6C71C4"
+        "white": "#94A3A5"
       }
     }
   },
@@ -3864,7 +3864,7 @@
         "foreground": "#ADADAD"
       },
       "normal": {
-        "black": "#242526",
+        "black": "#1B1C1D",
         "red": "#F8511B",
         "green": "#565747",
         "yellow": "#FA771D",
@@ -3881,7 +3881,7 @@
         "blue": "#3393CA",
         "magenta": "#E75E4F",
         "cyan": "#4FBCE6",
-        "white": "#8C735B"
+        "white": "#ADADAD"
       }
     }
   },
@@ -3893,7 +3893,7 @@
         "foreground": "#DEC165"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#251200",
         "red": "#D6262B",
         "green": "#919C00",
         "yellow": "#BE8A13",
@@ -3910,7 +3910,7 @@
         "blue": "#7CC9CF",
         "magenta": "#D26349",
         "cyan": "#E6A96B",
-        "white": "#FFEAA3"
+        "white": "#DEC165"
       }
     }
   },
@@ -3922,7 +3922,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#1D2837",
         "red": "#F9555F",
         "green": "#21B089",
         "yellow": "#FEF02A",
@@ -3951,7 +3951,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#F9F5F5",
+        "black": "#1F1E1F",
         "red": "#CC0000",
         "green": "#1F1E1F",
         "yellow": "#ADA110",
@@ -3980,7 +3980,7 @@
         "foreground": "#8B949E"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#101216",
         "red": "#F78166",
         "green": "#56D364",
         "yellow": "#E3B341",
@@ -3997,7 +3997,7 @@
         "blue": "#6CA4F8",
         "magenta": "#DB61A2",
         "cyan": "#2B7489",
-        "white": "#FFFFFF"
+        "white": "#8B949E"
       }
     }
   },
@@ -4009,7 +4009,7 @@
         "foreground": "#1f2328"
       },
       "normal": {
-        "black": "#24292f",
+        "black": "#f6f8fa",
         "red": "#cf222e",
         "green": "#1a7f37",
         "yellow": "#9a6700",
@@ -4026,7 +4026,7 @@
         "blue": "#218bff",
         "magenta": "#a475f9",
         "cyan": "#3192aa",
-        "white": "#8c959f"
+        "white": "#1f2328"
       }
     }
   },
@@ -4055,7 +4055,7 @@
         "blue": "#82AAFF",
         "magenta": "#FFCB6B",
         "cyan": "#676E95",
-        "white": "#FFFEFE"
+        "white": "#BFC7D5"
       }
     }
   },
@@ -4067,7 +4067,7 @@
         "foreground": "#EBEEF9"
       },
       "normal": {
-        "black": "#000009",
+        "black": "#0D101B",
         "red": "#BB4F6C",
         "green": "#72CCAE",
         "yellow": "#C65E3D",
@@ -4084,7 +4084,7 @@
         "blue": "#8BE9FD",
         "magenta": "#97BBF7",
         "cyan": "#C0B7F9",
-        "white": "#FFFFFF"
+        "white": "#EBEEF9"
       }
     }
   },
@@ -4113,7 +4113,7 @@
         "blue": "#4285F4",
         "magenta": "#A142F4",
         "cyan": "#24C1E0",
-        "white": "#FFFFFF"
+        "white": "#E8EAED"
       }
     }
   },
@@ -4125,7 +4125,7 @@
         "foreground": "#5F6368"
       },
       "normal": {
-        "black": "#202124",
+        "black": "#FFFFFF",
         "red": "#EA4335",
         "green": "#34A853",
         "yellow": "#FBBC04",
@@ -4142,7 +4142,7 @@
         "blue": "#4285F4",
         "magenta": "#A142F4",
         "cyan": "#24C1E0",
-        "white": "#FFFFFF"
+        "white": "#5F6368"
       }
     }
   },
@@ -4171,7 +4171,7 @@
         "blue": "#093748",
         "magenta": "#888BA5",
         "cyan": "#599CAA",
-        "white": "#D3EBE9"
+        "white": "#98D1CE"
       }
     }
   },
@@ -4183,7 +4183,7 @@
         "foreground": "#9F9FA1"
       },
       "normal": {
-        "black": "#2D283F",
+        "black": "#171423",
         "red": "#ED2261",
         "green": "#1FA91B",
         "yellow": "#8DDC20",
@@ -4200,7 +4200,7 @@
         "blue": "#A9BCEC",
         "magenta": "#AD81C2",
         "cyan": "#9DE3EB",
-        "white": "#A288F7"
+        "white": "#9F9FA1"
       }
     }
   },
@@ -4212,7 +4212,7 @@
         "foreground": "#FFF0A5"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#13773D",
         "red": "#BB0000",
         "green": "#00BB00",
         "yellow": "#E7B000",
@@ -4229,7 +4229,7 @@
         "blue": "#0000BB",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#FFF0A5"
       }
     }
   },
@@ -4270,7 +4270,7 @@
         "foreground": "#D4BE98"
       },
       "normal": {
-        "black": "#3C3836",
+        "black": "#282828",
         "red": "#EA6962",
         "green": "#A9B665",
         "yellow": "#D8A657",
@@ -4328,7 +4328,7 @@
         "foreground": "#A0A0A0"
       },
       "normal": {
-        "black": "#1B1D1E",
+        "black": "#121212",
         "red": "#F92672",
         "green": "#A6E22E",
         "yellow": "#FD971F",
@@ -4345,7 +4345,7 @@
         "blue": "#66D9EF",
         "magenta": "#9E6FFE",
         "cyan": "#A3BABF",
-        "white": "#F8F8F2"
+        "white": "#A0A0A0"
       }
     }
   },
@@ -4374,7 +4374,7 @@
         "blue": "#489E48",
         "magenta": "#B296C6",
         "cyan": "#F5BFD7",
-        "white": "#FEFBEA"
+        "white": "#A8A49D"
       }
     }
   },
@@ -4386,7 +4386,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#444444",
+        "black": "#000000",
         "red": "#FF0054",
         "green": "#B1D630",
         "yellow": "#9D895E",
@@ -4415,7 +4415,7 @@
         "foreground": "#444444"
       },
       "normal": {
-        "black": "#777777",
+        "black": "#EFEFEF",
         "red": "#FF0055",
         "green": "#739100",
         "yellow": "#503D15",
@@ -4432,7 +4432,7 @@
         "blue": "#9DB3CD",
         "magenta": "#A184A4",
         "cyan": "#85B2AA",
-        "white": "#BABABA"
+        "white": "#444444"
       }
     }
   },
@@ -4444,7 +4444,7 @@
         "foreground": "#EDEDED"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#222225",
         "red": "#D00E18",
         "green": "#138034",
         "yellow": "#FFCB3E",
@@ -4461,7 +4461,7 @@
         "blue": "#4FC2FD",
         "magenta": "#DE0071",
         "cyan": "#5D504A",
-        "white": "#FFFFFF"
+        "white": "#EDEDED"
       }
     }
   },
@@ -4473,7 +4473,7 @@
         "foreground": "#84C138"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#100B05",
         "red": "#B6214A",
         "green": "#00A600",
         "yellow": "#BFBF00",
@@ -4490,7 +4490,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#84C138"
       }
     }
   },
@@ -4502,7 +4502,7 @@
         "foreground": "#000000"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FFFFFF",
         "red": "#990000",
         "green": "#00A600",
         "yellow": "#999900",
@@ -4519,7 +4519,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#000000"
       }
     }
   },
@@ -4531,7 +4531,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#224FBC",
         "red": "#990000",
         "green": "#00A600",
         "yellow": "#999900",
@@ -4548,7 +4548,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -4577,7 +4577,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#00FF00"
       }
     }
   },
@@ -4589,7 +4589,7 @@
         "foreground": "#1C1E26"
       },
       "normal": {
-        "black": "#16161C",
+        "black": "#FDF0ED",
         "red": "#DA103F",
         "green": "#1EB980",
         "yellow": "#F6661E",
@@ -4606,7 +4606,7 @@
         "blue": "#3FC6DE",
         "magenta": "#F075B7",
         "cyan": "#1EAEAE",
-        "white": "#FDF0ED"
+        "white": "#1C1E26"
       }
     }
   },
@@ -4618,7 +4618,7 @@
         "foreground": "#FDF0ED"
       },
       "normal": {
-        "black": "#16161C",
+        "black": "#1C1E26",
         "red": "#E95678",
         "green": "#29D398",
         "yellow": "#FAB795",
@@ -4647,7 +4647,7 @@
         "foreground": "#DBDBDB"
       },
       "normal": {
-        "black": "#575757",
+        "black": "#000000",
         "red": "#FF1B00",
         "green": "#A5E055",
         "yellow": "#FBE74A",
@@ -4676,7 +4676,7 @@
         "foreground": "#94A3A5"
       },
       "normal": {
-        "black": "#282A2E",
+        "black": "#141414",
         "red": "#A54242",
         "green": "#8C9440",
         "yellow": "#DE935F",
@@ -4693,7 +4693,7 @@
         "blue": "#81A2BE",
         "magenta": "#B294BB",
         "cyan": "#8ABEB7",
-        "white": "#C5C8C6"
+        "white": "#94A3A5"
       }
     }
   },
@@ -4722,7 +4722,7 @@
         "blue": "#0000CD",
         "magenta": "#A020F0",
         "cyan": "#AEEEEE",
-        "white": "#FFFFFF"
+        "white": "#FDFDFD"
       }
     }
   },
@@ -4734,7 +4734,7 @@
         "foreground": "#FDFDFD"
       },
       "normal": {
-        "black": "#222222",
+        "black": "#000000",
         "red": "#F01818",
         "green": "#24D830",
         "yellow": "#F0D824",
@@ -4751,7 +4751,7 @@
         "blue": "#B3BFEF",
         "magenta": "#EFB3E3",
         "cyan": "#9CE2E2",
-        "white": "#FFFFFF"
+        "white": "#FDFDFD"
       }
     }
   },
@@ -4763,7 +4763,7 @@
         "foreground": "#D9EFD3"
       },
       "normal": {
-        "black": "#1F1F1F",
+        "black": "#3A3D3F",
         "red": "#FB002A",
         "green": "#339C24",
         "yellow": "#659B25",
@@ -4780,7 +4780,7 @@
         "blue": "#72FFB5",
         "magenta": "#50FF3E",
         "cyan": "#22FF71",
-        "white": "#DAEFD0"
+        "white": "#D9EFD3"
       }
     }
   },
@@ -4792,7 +4792,7 @@
         "foreground": "#FFCB83"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#262626",
         "red": "#C13900",
         "green": "#A4A900",
         "yellow": "#CAAF00",
@@ -4809,7 +4809,7 @@
         "blue": "#FFBE55",
         "magenta": "#FC874F",
         "cyan": "#C69752",
-        "white": "#FAFAFF"
+        "white": "#FFCB83"
       }
     }
   },
@@ -4838,7 +4838,7 @@
         "blue": "#91acd1",
         "magenta": "#ada0d3",
         "cyan": "#95c4ce",
-        "white": "#d2d4de"
+        "white": "#c6c8d1"
       }
     }
   },
@@ -4879,7 +4879,7 @@
         "foreground": "#EEEEEE"
       },
       "normal": {
-        "black": "#4E4E4E",
+        "black": "#000000",
         "red": "#FF6C60",
         "green": "#A8FF60",
         "yellow": "#FFFFB6",
@@ -4896,7 +4896,7 @@
         "blue": "#B5DCFE",
         "magenta": "#FF9CFE",
         "cyan": "#DFDFFE",
-        "white": "#FFFFFF"
+        "white": "#EEEEEE"
       }
     }
   },
@@ -4925,7 +4925,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#FFCC2F"
       }
     }
   },
@@ -4937,7 +4937,7 @@
         "foreground": "#F7F6EC"
       },
       "normal": {
-        "black": "#343935",
+        "black": "#1E1E1E",
         "red": "#CF3F61",
         "green": "#7BB75B",
         "yellow": "#E9B32A",
@@ -4954,7 +4954,7 @@
         "blue": "#135979",
         "magenta": "#604291",
         "cyan": "#76BBCA",
-        "white": "#B2B5AE"
+        "white": "#F7F6EC"
       }
     }
   },
@@ -4966,7 +4966,7 @@
         "foreground": "#DEDEDE"
       },
       "normal": {
-        "black": "#929292",
+        "black": "#121212",
         "red": "#E27373",
         "green": "#94B979",
         "yellow": "#FFBA7B",
@@ -4983,7 +4983,7 @@
         "blue": "#B1D8F6",
         "magenta": "#FBDAFF",
         "cyan": "#1AB2A8",
-        "white": "#FFFFFF"
+        "white": "#DEDEDE"
       }
     }
   },
@@ -4995,7 +4995,7 @@
         "foreground": "#23476A"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#758480",
         "red": "#DD006F",
         "green": "#6FDD00",
         "yellow": "#DD6F00",
@@ -5012,7 +5012,7 @@
         "blue": "#74B9FF",
         "magenta": "#B974FF",
         "cyan": "#74FFB9",
-        "white": "#FFFFFF"
+        "white": "#23476A"
       }
     }
   },
@@ -5024,7 +5024,7 @@
         "foreground": "#C5C9C5"
       },
       "normal": {
-        "black": "#0D0C0C",
+        "black": "#181616",
         "red": "#C4746E",
         "green": "#8A9A7B",
         "yellow": "#C4B28A",
@@ -5053,7 +5053,7 @@
         "foreground": "#DCD7BA"
       },
       "normal": {
-        "black": "#090618",
+        "black": "#1F1F28",
         "red": "#C34043",
         "green": "#76946A",
         "yellow": "#C0A36E",
@@ -5070,7 +5070,7 @@
         "blue": "#7FB4CA",
         "magenta": "#938AA9",
         "cyan": "#7AA89F",
-        "white": "#C8C093"
+        "white": "#DCD7BA"
       }
     }
   },
@@ -5082,7 +5082,7 @@
         "foreground": "#F7F7F7"
       },
       "normal": {
-        "black": "#4D4D4D",
+        "black": "#0E100A",
         "red": "#C70031",
         "green": "#29CF13",
         "yellow": "#D8E30E",
@@ -5099,7 +5099,7 @@
         "blue": "#97A4F7",
         "magenta": "#C495F0",
         "cyan": "#68F2E0",
-        "white": "#FFFFFF"
+        "white": "#F7F7F7"
       }
     }
   },
@@ -5111,7 +5111,7 @@
         "foreground": "#D8E2D7"
       },
       "normal": {
-        "black": "#2E8744",
+        "black": "#0D4A08",
         "red": "#D84E4C",
         "green": "#95DA5A",
         "yellow": "#D6E264",
@@ -5128,7 +5128,7 @@
         "blue": "#57AEFF",
         "magenta": "#AE63E9",
         "cyan": "#FFAA2B",
-        "white": "#FFFEFE"
+        "white": "#D8E2D7"
       }
     }
   },
@@ -5140,7 +5140,7 @@
         "foreground": "#E0E0E0"
       },
       "normal": {
-        "black": "#39243A",
+        "black": "#1F1926",
         "red": "#EB64B9",
         "green": "#AFD686",
         "yellow": "#FEAE87",
@@ -5157,7 +5157,7 @@
         "blue": "#74DFC4",
         "magenta": "#6D75E0",
         "cyan": "#B4DCE7",
-        "white": "#FFFFFF"
+        "white": "#E0E0E0"
       }
     }
   },
@@ -5169,7 +5169,7 @@
         "foreground": "#959595"
       },
       "normal": {
-        "black": "#2B2B2B",
+        "black": "#222222",
         "red": "#D45A60",
         "green": "#AFBA67",
         "yellow": "#E5D289",
@@ -5186,7 +5186,7 @@
         "blue": "#6699D6",
         "magenta": "#AB53D6",
         "cyan": "#5FC0AE",
-        "white": "#C1C2C2"
+        "white": "#959595"
       }
     }
   },
@@ -5198,7 +5198,7 @@
         "foreground": "#736E7D"
       },
       "normal": {
-        "black": "#230046",
+        "black": "#050014",
         "red": "#7D1625",
         "green": "#337E6F",
         "yellow": "#7F6F49",
@@ -5215,7 +5215,7 @@
         "blue": "#8E87E0",
         "magenta": "#A776E0",
         "cyan": "#9AD4E0",
-        "white": "#8C91FA"
+        "white": "#736E7D"
       }
     }
   },
@@ -5244,7 +5244,7 @@
         "blue": "#0099CC",
         "magenta": "#CC69C8",
         "cyan": "#7AC4CC",
-        "white": "#BCCCCC"
+        "white": "#AFC2C2"
       }
     }
   },
@@ -5256,7 +5256,7 @@
         "foreground": "#AFC2C2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#303030",
         "red": "#FF3030",
         "green": "#559A70",
         "yellow": "#CCAC00",
@@ -5273,7 +5273,7 @@
         "blue": "#0099CC",
         "magenta": "#CC69C8",
         "cyan": "#7AC4CC",
-        "white": "#BCCCCC"
+        "white": "#AFC2C2"
       }
     }
   },
@@ -5302,7 +5302,7 @@
         "blue": "#777798",
         "magenta": "#BF9DB9",
         "cyan": "#BDDCFF",
-        "white": "#DFE2ED"
+        "white": "#CACED8"
       }
     }
   },
@@ -5331,7 +5331,7 @@
         "blue": "#767495",
         "magenta": "#BE9CB8",
         "cyan": "#BCDBFF",
-        "white": "#DFE2ED"
+        "white": "#C9CDD7"
       }
     }
   },
@@ -5343,7 +5343,7 @@
         "foreground": "#484646"
       },
       "normal": {
-        "black": "#3E3C3D",
+        "black": "#EBE4E1",
         "red": "#783C1F",
         "green": "#497D46",
         "yellow": "#8F750B",
@@ -5360,7 +5360,7 @@
         "blue": "#5C4F89",
         "magenta": "#B56895",
         "cyan": "#64BAFF",
-        "white": "#EBE4E1"
+        "white": "#484646"
       }
     }
   },
@@ -5372,7 +5372,7 @@
         "foreground": "#BDC3C7"
       },
       "normal": {
-        "black": "#232423",
+        "black": "#31363B",
         "red": "#BA2922",
         "green": "#7E807E",
         "yellow": "#4C4F4D",
@@ -5389,7 +5389,7 @@
         "blue": "#13BF9D",
         "magenta": "#487D72",
         "cyan": "#00D1D1",
-        "white": "#E8E8E8"
+        "white": "#BDC3C7"
       }
     }
   },
@@ -5401,7 +5401,7 @@
         "foreground": "#000000"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FEF49C",
         "red": "#CC0000",
         "green": "#00A600",
         "yellow": "#999900",
@@ -5418,7 +5418,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#000000"
       }
     }
   },
@@ -5430,7 +5430,7 @@
         "foreground": "#23476A"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FFFFFF",
         "red": "#B5407B",
         "green": "#7BB540",
         "yellow": "#B57B40",
@@ -5447,7 +5447,7 @@
         "blue": "#73A0CD",
         "magenta": "#A073CD",
         "cyan": "#73CDA0",
-        "white": "#FFFFFF"
+        "white": "#23476A"
       }
     }
   },
@@ -5459,7 +5459,7 @@
         "foreground": "#C3C7D1"
       },
       "normal": {
-        "black": "#073641",
+        "black": "#1E282C",
         "red": "#EB606B",
         "green": "#C3E88D",
         "yellow": "#F7EB95",
@@ -5476,7 +5476,7 @@
         "blue": "#7DC6BF",
         "magenta": "#6C71C3",
         "cyan": "#34434D",
-        "white": "#FFFFFF"
+        "white": "#C3C7D1"
       }
     }
   },
@@ -5505,7 +5505,7 @@
         "blue": "#5555FF",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#BBBBBB"
       }
     }
   },
@@ -5517,7 +5517,7 @@
         "foreground": "#CAC296"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#1D1908",
         "red": "#B64C00",
         "green": "#7C8B16",
         "yellow": "#D3BD26",
@@ -5534,7 +5534,7 @@
         "blue": "#ACB8FF",
         "magenta": "#FFA0FF",
         "cyan": "#FFBC51",
-        "white": "#FED698"
+        "white": "#CAC296"
       }
     }
   },
@@ -5546,7 +5546,7 @@
         "foreground": "#e6d6ac"
       },
       "normal": {
-        "black": "#242021",
+        "black": "#2a2426",
         "red": "#e68183",
         "green": "#a7c080",
         "yellow": "#d9bb80",
@@ -5575,7 +5575,7 @@
         "foreground": "#E1E1E0"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#2D3743",
         "red": "#FF4242",
         "green": "#74AF68",
         "yellow": "#FFAD29",
@@ -5592,7 +5592,7 @@
         "blue": "#23D7D7",
         "magenta": "#FF37FF",
         "cyan": "#00EDE1",
-        "white": "#FFFFFF"
+        "white": "#E1E1E0"
       }
     }
   },
@@ -5621,7 +5621,7 @@
         "blue": "#0000ff",
         "magenta": "#dd22dd",
         "cyan": "#008899",
-        "white": "#595959"
+        "white": "#000000"
       }
     }
   },
@@ -5650,7 +5650,7 @@
         "blue": "#0000ff",
         "magenta": "#dd22dd",
         "cyan": "#008899",
-        "white": "#595959"
+        "white": "#000000"
       }
     }
   },
@@ -5679,7 +5679,7 @@
         "blue": "#338fff",
         "magenta": "#ff66ff",
         "cyan": "#00eff0",
-        "white": "#989898"
+        "white": "#ffffff"
       }
     }
   },
@@ -5708,7 +5708,7 @@
         "blue": "#338fff",
         "magenta": "#ff66ff",
         "cyan": "#00eff0",
-        "white": "#989898"
+        "white": "#ffffff"
       }
     }
   },
@@ -5737,7 +5737,7 @@
         "blue": "#FFAF00",
         "magenta": "#FF87AF",
         "cyan": "#FFCE51",
-        "white": "#FFFFFF"
+        "white": "#BBBBBB"
       }
     }
   },
@@ -5749,7 +5749,7 @@
         "foreground": "#F7D66A"
       },
       "normal": {
-        "black": "#351B0E",
+        "black": "#120B0D",
         "red": "#9B291C",
         "green": "#636232",
         "yellow": "#C36E28",
@@ -5766,7 +5766,7 @@
         "blue": "#9EB2B4",
         "magenta": "#FF5B6A",
         "cyan": "#8ACD8F",
-        "white": "#FFE598"
+        "white": "#F7D66A"
       }
     }
   },
@@ -5778,7 +5778,7 @@
         "foreground": "#FF9400"
       },
       "normal": {
-        "black": "#402500",
+        "black": "#2B1900",
         "red": "#FF9400",
         "green": "#FF9400",
         "yellow": "#FF9400",
@@ -5807,7 +5807,7 @@
         "foreground": "#00CCFF"
       },
       "normal": {
-        "black": "#003340",
+        "black": "#00222B",
         "red": "#00CCFF",
         "green": "#00CCFF",
         "yellow": "#00CCFF",
@@ -5836,7 +5836,7 @@
         "foreground": "#0BFF00"
       },
       "normal": {
-        "black": "#034000",
+        "black": "#022B00",
         "red": "#0BFF00",
         "green": "#0BFF00",
         "yellow": "#0BFF00",
@@ -5865,7 +5865,7 @@
         "foreground": "#FF3600"
       },
       "normal": {
-        "black": "#401200",
+        "black": "#2B0C00",
         "red": "#FF3600",
         "green": "#FF3600",
         "yellow": "#FF3600",
@@ -5894,7 +5894,7 @@
         "foreground": "#FAFAFA"
       },
       "normal": {
-        "black": "#3B3B3B",
+        "black": "#262626",
         "red": "#FAFAFA",
         "green": "#FAFAFA",
         "yellow": "#FAFAFA",
@@ -5923,7 +5923,7 @@
         "foreground": "#FFD300"
       },
       "normal": {
-        "black": "#403500",
+        "black": "#2B2400",
         "red": "#FFD300",
         "green": "#FFD300",
         "yellow": "#FFD300",
@@ -5952,7 +5952,7 @@
         "foreground": "#F8F8F2"
       },
       "normal": {
-        "black": "#75715E",
+        "black": "#272822",
         "red": "#F92672",
         "green": "#A6E22E",
         "yellow": "#F4BF75",
@@ -6056,7 +6056,7 @@
         "blue": "#9D65FF",
         "magenta": "#F4005F",
         "cyan": "#58D1EB",
-        "white": "#F6F6EF"
+        "white": "#C4C5B5"
       }
     }
   },
@@ -6068,7 +6068,7 @@
         "foreground": "#BDBDBD"
       },
       "normal": {
-        "black": "#323437",
+        "black": "#080808",
         "red": "#FF5454",
         "green": "#8CC85F",
         "yellow": "#E3C78A",
@@ -6085,7 +6085,7 @@
         "blue": "#74B2FF",
         "magenta": "#AE81FF",
         "cyan": "#85DC85",
-        "white": "#E4E4E4"
+        "white": "#BDBDBD"
       }
     }
   },
@@ -6097,7 +6097,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#040404",
+        "black": "#211F46",
         "red": "#0F49C4",
         "green": "#48B117",
         "yellow": "#E87324",
@@ -6114,7 +6114,7 @@
         "blue": "#FB605B",
         "magenta": "#975B5A",
         "cyan": "#1EFF8E",
-        "white": "#F6F5FB"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -6126,7 +6126,7 @@
         "foreground": "#A0A0A0"
       },
       "normal": {
-        "black": "#383838",
+        "black": "#222222",
         "red": "#A95551",
         "green": "#666666",
         "yellow": "#A98051",
@@ -6143,7 +6143,7 @@
         "blue": "#98BD5E",
         "magenta": "#A3A3A3",
         "cyan": "#DCDCDC",
-        "white": "#D8C8BB"
+        "white": "#A0A0A0"
       }
     }
   },
@@ -6172,7 +6172,7 @@
         "blue": "#69B4F9",
         "magenta": "#DD92F6",
         "cyan": "#8CE8FF",
-        "white": "#C9CCCD"
+        "white": "#C7C8FF"
       }
     }
   },
@@ -6184,7 +6184,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#271F19",
         "red": "#800000",
         "green": "#61CE3C",
         "yellow": "#FBDE2D",
@@ -6201,7 +6201,7 @@
         "blue": "#253B76",
         "magenta": "#FF0080",
         "cyan": "#8DA6CE",
-        "white": "#F8F8F8"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -6213,7 +6213,7 @@
         "foreground": "#23476A"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#758480",
         "red": "#DD6F00",
         "green": "#00DD6F",
         "yellow": "#6FDD00",
@@ -6230,7 +6230,7 @@
         "blue": "#B974FF",
         "magenta": "#FF74B9",
         "cyan": "#74B9FF",
-        "white": "#FFFFFF"
+        "white": "#23476A"
       }
     }
   },
@@ -6242,7 +6242,7 @@
         "foreground": "#E6E8EF"
       },
       "normal": {
-        "black": "#23252B",
+        "black": "#1C1E22",
         "red": "#B54036",
         "green": "#5AB977",
         "yellow": "#DEB566",
@@ -6259,7 +6259,7 @@
         "blue": "#6A7C93",
         "magenta": "#A4799D",
         "cyan": "#3F94A8",
-        "white": "#EBEDF2"
+        "white": "#E6E8EF"
       }
     }
   },
@@ -6288,7 +6288,7 @@
         "blue": "#82AAFF",
         "magenta": "#C792EA",
         "cyan": "#7FDBCA",
-        "white": "#FFFFFF"
+        "white": "#D6DEEB"
       }
     }
   },
@@ -6300,7 +6300,7 @@
         "foreground": "#BDC1C6"
       },
       "normal": {
-        "black": "#1D3B53",
+        "black": "#011627",
         "red": "#FC514E",
         "green": "#A1CD5E",
         "yellow": "#E3D18A",
@@ -6317,7 +6317,7 @@
         "blue": "#82AAFF",
         "magenta": "#AE81FF",
         "cyan": "#7FDBCA",
-        "white": "#D6DEEB"
+        "white": "#BDC1C6"
       }
     }
   },
@@ -6329,7 +6329,7 @@
         "foreground": "#BBBBBB"
       },
       "normal": {
-        "black": "#4C4C4C",
+        "black": "#000000",
         "red": "#BB0000",
         "green": "#5FDE8F",
         "yellow": "#F3F167",
@@ -6346,7 +6346,7 @@
         "blue": "#5555FF",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#BBBBBB"
       }
     }
   },
@@ -6358,7 +6358,7 @@
         "foreground": "#BBBBBB"
       },
       "normal": {
-        "black": "#4C4C4C",
+        "black": "#171717",
         "red": "#BB0000",
         "green": "#04F623",
         "yellow": "#F3F167",
@@ -6375,7 +6375,7 @@
         "blue": "#62CBE8",
         "magenta": "#FF9BF5",
         "cyan": "#00CCD8",
-        "white": "#FFFFFF"
+        "white": "#BBBBBB"
       }
     }
   },
@@ -6387,7 +6387,7 @@
         "foreground": "#DFDFDF"
       },
       "normal": {
-        "black": "#373D48",
+        "black": "#2F2F2F",
         "red": "#9B3E46",
         "green": "#095B32",
         "yellow": "#808020",
@@ -6416,7 +6416,7 @@
         "foreground": "#004F7C"
       },
       "normal": {
-        "black": "#003B4E",
+        "black": "#EBEAF2",
         "red": "#E64569",
         "green": "#069F5F",
         "yellow": "#DAB752",
@@ -6433,7 +6433,7 @@
         "blue": "#6FBBE2",
         "magenta": "#E586E7",
         "cyan": "#96DCDA",
-        "white": "#DEDEDE"
+        "white": "#004F7C"
       }
     }
   },
@@ -6445,7 +6445,7 @@
         "foreground": "#D8DEE9"
       },
       "normal": {
-        "black": "#3B4252",
+        "black": "#2E3440",
         "red": "#BF616A",
         "green": "#A3BE8C",
         "yellow": "#EBCB8B",
@@ -6462,7 +6462,7 @@
         "blue": "#81A1C1",
         "magenta": "#B48EAD",
         "cyan": "#8FBCBB",
-        "white": "#ECEFF4"
+        "white": "#D8DEE9"
       }
     }
   },
@@ -6474,7 +6474,7 @@
         "foreground": "#3B2322"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#DFDBC3",
         "red": "#CC0000",
         "green": "#009600",
         "yellow": "#D06B00",
@@ -6491,7 +6491,7 @@
         "blue": "#0000CC",
         "magenta": "#CC00CC",
         "cyan": "#0087CC",
-        "white": "#FFFFFF"
+        "white": "#3B2322"
       }
     }
   },
@@ -6503,7 +6503,7 @@
         "foreground": "#CDCDCD"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#283033",
         "red": "#A60001",
         "green": "#00BB00",
         "yellow": "#FECD22",
@@ -6520,7 +6520,7 @@
         "blue": "#A1D7FF",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#CDCDCD"
       }
     }
   },
@@ -6532,7 +6532,7 @@
         "foreground": "#979CAC"
       },
       "normal": {
-        "black": "#4F4F4F",
+        "black": "#1C1F27",
         "red": "#AF4B57",
         "green": "#AFD383",
         "yellow": "#E5C079",
@@ -6549,7 +6549,7 @@
         "blue": "#B5DCFE",
         "magenta": "#FB9BFE",
         "cyan": "#DFDFFD",
-        "white": "#FEFFFE"
+        "white": "#979CAC"
       }
     }
   },
@@ -6561,7 +6561,7 @@
         "foreground": "#B3B8C3"
       },
       "normal": {
-        "black": "#121C21",
+        "black": "#121B21",
         "red": "#E44754",
         "green": "#89BD82",
         "yellow": "#F7BD51",
@@ -6578,7 +6578,7 @@
         "blue": "#5486C0",
         "magenta": "#B77EB8",
         "cyan": "#50A5A4",
-        "white": "#FFFFFF"
+        "white": "#B3B8C3"
       }
     }
   },
@@ -6590,7 +6590,7 @@
         "foreground": "#8A8DAE"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#222125",
         "red": "#AC2E31",
         "green": "#31AC61",
         "yellow": "#AC4300",
@@ -6607,7 +6607,7 @@
         "blue": "#4488FF",
         "magenta": "#FFC21D",
         "cyan": "#1FFAFF",
-        "white": "#5B6EA7"
+        "white": "#8A8DAE"
       }
     }
   },
@@ -6636,7 +6636,7 @@
         "blue": "#78D1E1",
         "magenta": "#988BC7",
         "cyan": "#FF79C6",
-        "white": "#FFFFFF"
+        "white": "#ABB2BF"
       }
     }
   },
@@ -6648,7 +6648,7 @@
         "foreground": "#5C6370"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#1E2127",
         "red": "#E06C75",
         "green": "#98C379",
         "yellow": "#D19A66",
@@ -6665,7 +6665,7 @@
         "blue": "#61AFEF",
         "magenta": "#C678DD",
         "cyan": "#56B6C2",
-        "white": "#FFFEFE"
+        "white": "#5C6370"
       }
     }
   },
@@ -6677,7 +6677,7 @@
         "foreground": "#DCDFE4"
       },
       "normal": {
-        "black": "#282C34",
+        "black": "#000000",
         "red": "#E06C75",
         "green": "#98C379",
         "yellow": "#E5C07B",
@@ -6706,7 +6706,7 @@
         "foreground": "#2A2B32"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#F8F8F8",
         "red": "#DA3E39",
         "green": "#41933E",
         "yellow": "#855504",
@@ -6723,7 +6723,7 @@
         "blue": "#315EEE",
         "magenta": "#930092",
         "cyan": "#0E6FAD",
-        "white": "#FFFEFE"
+        "white": "#2A2B32"
       }
     }
   },
@@ -6735,7 +6735,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#262626",
+        "black": "#161616",
         "red": "#EE5396",
         "green": "#42BE65",
         "yellow": "#FFE97B",
@@ -6781,7 +6781,7 @@
         "blue": "#82AAFF",
         "magenta": "#FFCB6B",
         "cyan": "#676E95",
-        "white": "#FFFEFE"
+        "white": "#BFC7D5"
       }
     }
   },
@@ -6793,7 +6793,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#0A0A0A",
+        "black": "#232E37",
         "red": "#AB8F74",
         "green": "#74AB8F",
         "yellow": "#8FAB74",
@@ -6810,7 +6810,7 @@
         "blue": "#AF9CC3",
         "magenta": "#FF1D62",
         "cyan": "#4BB8FD",
-        "white": "#A020F0"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -6822,7 +6822,7 @@
         "foreground": "#F0F0F0"
       },
       "normal": {
-        "black": "#1F1F20",
+        "black": "#1D1E20",
         "red": "#FB055A",
         "green": "#26FFD4",
         "yellow": "#FDAA5A",
@@ -6851,7 +6851,7 @@
         "foreground": "#000000"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#f2eede",
         "red": "#cc3e28",
         "green": "#216609",
         "yellow": "#b58900",
@@ -6868,7 +6868,7 @@
         "blue": "#1e6fcc",
         "magenta": "#5c21a5",
         "cyan": "#158c86",
-        "white": "#aaaaaa"
+        "white": "#000000"
       }
     }
   },
@@ -6897,7 +6897,7 @@
         "blue": "#FFAF00",
         "magenta": "#FF5FAF",
         "cyan": "#00AFAF",
-        "white": "#5F8787"
+        "white": "#D0D0D0"
       }
     }
   },
@@ -6926,7 +6926,7 @@
         "blue": "#D75F00",
         "magenta": "#D75F00",
         "cyan": "#005FAF",
-        "white": "#005F87"
+        "white": "#444444"
       }
     }
   },
@@ -6955,7 +6955,7 @@
         "blue": "#06B6EF",
         "magenta": "#815BA4",
         "cyan": "#5BC4BF",
-        "white": "#E7E9DB"
+        "white": "#A39E9B"
       }
     }
   },
@@ -6967,7 +6967,7 @@
         "foreground": "#F2F2F2"
       },
       "normal": {
-        "black": "#2A2A2A",
+        "black": "#000000",
         "red": "#FF0000",
         "green": "#79FF0F",
         "yellow": "#D3BF00",
@@ -6984,7 +6984,7 @@
         "blue": "#709AED",
         "magenta": "#DB67E6",
         "cyan": "#7ADFF2",
-        "white": "#FFFFFF"
+        "white": "#F2F2F2"
       }
     }
   },
@@ -7025,7 +7025,7 @@
         "foreground": "#424242"
       },
       "normal": {
-        "black": "#212121",
+        "black": "#F1F1F1",
         "red": "#C30771",
         "green": "#10A778",
         "yellow": "#A89C14",
@@ -7042,7 +7042,7 @@
         "blue": "#20BBFC",
         "magenta": "#6855DE",
         "cyan": "#4FB8CC",
-        "white": "#F1F1F1"
+        "white": "#424242"
       }
     }
   },
@@ -7054,7 +7054,7 @@
         "foreground": "#C7C7C7"
       },
       "normal": {
-        "black": "#353535",
+        "black": "#000000",
         "red": "#E64569",
         "green": "#89D287",
         "yellow": "#DAB752",
@@ -7071,7 +7071,7 @@
         "blue": "#6FBBE2",
         "magenta": "#E586E7",
         "cyan": "#96DCDA",
-        "white": "#DEDEDE"
+        "white": "#C7C7C7"
       }
     }
   },
@@ -7083,7 +7083,7 @@
         "foreground": "#D1CAE8"
       },
       "normal": {
-        "black": "#2F2942",
+        "black": "#241F33",
         "red": "#FF857F",
         "green": "#48B685",
         "yellow": "#E6C000",
@@ -7100,7 +7100,7 @@
         "blue": "#C5A3FF",
         "magenta": "#EF6155",
         "cyan": "#C2FFFF",
-        "white": "#F8F8F0"
+        "white": "#D1CAE8"
       }
     }
   },
@@ -7112,7 +7112,7 @@
         "foreground": "#D0D0D0"
       },
       "normal": {
-        "black": "#2F2E2D",
+        "black": "#1C1C1C",
         "red": "#A36666",
         "green": "#90A57D",
         "yellow": "#D7AF87",
@@ -7129,7 +7129,7 @@
         "blue": "#A1BDCE",
         "magenta": "#D7BEDA",
         "cyan": "#B1E7DD",
-        "white": "#EFEFEF"
+        "white": "#D0D0D0"
       }
     }
   },
@@ -7141,7 +7141,7 @@
         "foreground": "#F6F6F7"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#052454",
         "red": "#7E0008",
         "green": "#098003",
         "yellow": "#C4A000",
@@ -7158,7 +7158,7 @@
         "blue": "#268AD2",
         "magenta": "#FE13FA",
         "cyan": "#29FFFE",
-        "white": "#C2C1C3"
+        "white": "#F6F6F7"
       }
     }
   },
@@ -7170,7 +7170,7 @@
         "foreground": "#F1F1F1"
       },
       "normal": {
-        "black": "#F18260",
+        "black": "#282828",
         "red": "#B51A20",
         "green": "#A6CC75",
         "yellow": "#FED33A",
@@ -7187,7 +7187,7 @@
         "blue": "#A5EBEA",
         "magenta": "#EF8A50",
         "cyan": "#A5EBEA",
-        "white": "#FFFFFF"
+        "white": "#F1F1F1"
       }
     }
   },
@@ -7216,7 +7216,7 @@
         "blue": "#0000FF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#F2F2F2"
       }
     }
   },
@@ -7228,7 +7228,7 @@
         "foreground": "#C9D1D9"
       },
       "normal": {
-        "black": "#0D1117",
+        "black": "#161B22",
         "red": "#E34C26",
         "green": "#238636",
         "yellow": "#ED9A51",
@@ -7274,7 +7274,7 @@
         "blue": "#4DBFFF",
         "magenta": "#C067E4",
         "cyan": "#70DBD8",
-        "white": "#F0F0F0"
+        "white": "#B9B9B9"
       }
     }
   },
@@ -7286,7 +7286,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#762423",
         "red": "#D62E4E",
         "green": "#71BE6B",
         "yellow": "#BEB86B",
@@ -7315,7 +7315,7 @@
         "foreground": "#D7C9A7"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#7A251E",
         "red": "#FF3F00",
         "green": "#00BB00",
         "yellow": "#E7B000",
@@ -7332,7 +7332,7 @@
         "blue": "#0072AE",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#D7C9A7"
       }
     }
   },
@@ -7344,7 +7344,7 @@
         "foreground": "#D9D9D9"
       },
       "normal": {
-        "black": "#151515",
+        "black": "#353A44",
         "red": "#BC5653",
         "green": "#909D63",
         "yellow": "#EBC17A",
@@ -7361,7 +7361,7 @@
         "blue": "#7EAAC7",
         "magenta": "#B06698",
         "cyan": "#ACBBD0",
-        "white": "#F7F7F7"
+        "white": "#D9D9D9"
       }
     }
   },
@@ -7373,7 +7373,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#2B2B2B",
         "red": "#CDAF95",
         "green": "#A8FF60",
         "yellow": "#BFBB1F",
@@ -7390,7 +7390,7 @@
         "blue": "#86BDC9",
         "magenta": "#E500E5",
         "cyan": "#8C9BC4",
-        "white": "#E5E5E5"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -7402,7 +7402,7 @@
         "foreground": "#575279"
       },
       "normal": {
-        "black": "#F2E9E1",
+        "black": "#FAF4ED",
         "red": "#B4637A",
         "green": "#56949F",
         "yellow": "#EA9D34",
@@ -7431,7 +7431,7 @@
         "foreground": "#E0DEF4"
       },
       "normal": {
-        "black": "#393552",
+        "black": "#232136",
         "red": "#EB6F92",
         "green": "#9CCFD8",
         "yellow": "#F6C177",
@@ -7460,7 +7460,7 @@
         "foreground": "#E0DEF4"
       },
       "normal": {
-        "black": "#26233A",
+        "black": "#191724",
         "red": "#EB6F92",
         "green": "#9CCFD8",
         "yellow": "#F6C177",
@@ -7489,7 +7489,7 @@
         "foreground": "#514968"
       },
       "normal": {
-        "black": "#241F2B",
+        "black": "#100815",
         "red": "#91284C",
         "green": "#23801C",
         "yellow": "#B49D27",
@@ -7506,7 +7506,7 @@
         "blue": "#90BAF9",
         "magenta": "#A479E3",
         "cyan": "#ACD4EB",
-        "white": "#9E8CBD"
+        "white": "#514968"
       }
     }
   },
@@ -7518,7 +7518,7 @@
         "foreground": "#23476A"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#758480",
         "red": "#DD0007",
         "green": "#07DD00",
         "yellow": "#DDD600",
@@ -7535,7 +7535,7 @@
         "blue": "#7478FF",
         "magenta": "#FA74FF",
         "cyan": "#74FFFA",
-        "white": "#FFFFFF"
+        "white": "#23476A"
       }
     }
   },
@@ -7547,7 +7547,7 @@
         "foreground": "#DEB88D"
       },
       "normal": {
-        "black": "#17384C",
+        "black": "#09141B",
         "red": "#D15123",
         "green": "#027C9B",
         "yellow": "#FCA02F",
@@ -7564,7 +7564,7 @@
         "blue": "#1BBCDD",
         "magenta": "#BBE3EE",
         "cyan": "#87ACB4",
-        "white": "#FEE4CE"
+        "white": "#DEB88D"
       }
     }
   },
@@ -7576,7 +7576,7 @@
         "foreground": "#D4E7D4"
       },
       "normal": {
-        "black": "#757575",
+        "black": "#243435",
         "red": "#825D4D",
         "green": "#728C62",
         "yellow": "#ADA16D",
@@ -7593,7 +7593,7 @@
         "blue": "#7AC3CF",
         "magenta": "#D6B2A1",
         "cyan": "#ADE0E0",
-        "white": "#E0E0E0"
+        "white": "#D4E7D4"
       }
     }
   },
@@ -7605,7 +7605,7 @@
         "foreground": "#b9b9b9"
       },
       "normal": {
-        "black": "#252525",
+        "black": "#181818",
         "red": "#ed4a46",
         "green": "#70b433",
         "yellow": "#dbb32d",
@@ -7622,7 +7622,7 @@
         "blue": "#4f9cfe",
         "magenta": "#ff81ca",
         "cyan": "#56d8c9",
-        "white": "#dedede"
+        "white": "#b9b9b9"
       }
     }
   },
@@ -7634,7 +7634,7 @@
         "foreground": "#adbcbc"
       },
       "normal": {
-        "black": "#184956",
+        "black": "#103c48",
         "red": "#fa5750",
         "green": "#75b938",
         "yellow": "#dbb32d",
@@ -7651,7 +7651,7 @@
         "blue": "#58a3ff",
         "magenta": "#ff84cd",
         "cyan": "#53d6c7",
-        "white": "#cad8d9"
+        "white": "#adbcbc"
       }
     }
   },
@@ -7663,7 +7663,7 @@
         "foreground": "#53676d"
       },
       "normal": {
-        "black": "#ece3cc",
+        "black": "#fbf3db",
         "red": "#d2212d",
         "green": "#489100",
         "yellow": "#ad8900",
@@ -7680,7 +7680,7 @@
         "blue": "#006dce",
         "magenta": "#c44392",
         "cyan": "#00978a",
-        "white": "#3a4d53"
+        "white": "#53676d"
       }
     }
   },
@@ -7692,7 +7692,7 @@
         "foreground": "#474747"
       },
       "normal": {
-        "black": "#ebebeb",
+        "black": "#ffffff",
         "red": "#d6000c",
         "green": "#1d9700",
         "yellow": "#c49700",
@@ -7709,7 +7709,7 @@
         "blue": "#0054cf",
         "magenta": "#c7008b",
         "cyan": "#009a8a",
-        "white": "#282828"
+        "white": "#474747"
       }
     }
   },
@@ -7721,7 +7721,7 @@
         "foreground": "#4e4e4e"
       },
       "normal": {
-        "black": "#4e4e4e",
+        "black": "#dadada",
         "red": "#af5f5f",
         "green": "#5f885f",
         "yellow": "#af8760",
@@ -7738,7 +7738,7 @@
         "blue": "#0087af",
         "magenta": "#87025f",
         "cyan": "#008787",
-        "white": "#eeeeee"
+        "white": "#4e4e4e"
       }
     }
   },
@@ -7750,7 +7750,7 @@
         "foreground": "#d0d0d0"
       },
       "normal": {
-        "black": "#4e4e4e",
+        "black": "#3a3a3a",
         "red": "#d68787",
         "green": "#5f865f",
         "yellow": "#d8af5f",
@@ -7767,7 +7767,7 @@
         "blue": "#add4fb",
         "magenta": "#ffafaf",
         "cyan": "#87d7d7",
-        "white": "#e4e4e4"
+        "white": "#d0d0d0"
       }
     }
   },
@@ -7779,7 +7779,7 @@
         "foreground": "#CACECD"
       },
       "normal": {
-        "black": "#323232",
+        "black": "#111213",
         "red": "#C22832",
         "green": "#8EC43D",
         "yellow": "#E0C64F",
@@ -7796,7 +7796,7 @@
         "blue": "#43A5D5",
         "magenta": "#8B57B5",
         "cyan": "#8EC43D",
-        "white": "#FFFFFF"
+        "white": "#CACECD"
       }
     }
   },
@@ -7808,7 +7808,7 @@
         "foreground": "#405555"
       },
       "normal": {
-        "black": "#012026",
+        "black": "#001015",
         "red": "#B2302D",
         "green": "#00A941",
         "yellow": "#5E8BAA",
@@ -7825,7 +7825,7 @@
         "blue": "#61D5BA",
         "magenta": "#1298FF",
         "cyan": "#98D028",
-        "white": "#58FBD6"
+        "white": "#405555"
       }
     }
   },
@@ -7837,7 +7837,7 @@
         "foreground": "#4882CD"
       },
       "normal": {
-        "black": "#2C2423",
+        "black": "#2A201F",
         "red": "#AB2463",
         "green": "#6CA323",
         "yellow": "#AB6423",
@@ -7854,7 +7854,7 @@
         "blue": "#8FBAEC",
         "magenta": "#C288EC",
         "cyan": "#8FEEB9",
-        "white": "#F5EEEC"
+        "white": "#4882CD"
       }
     }
   },
@@ -7883,7 +7883,7 @@
         "blue": "#7AB0D2",
         "magenta": "#C5A7D9",
         "cyan": "#8CDFE0",
-        "white": "#E0E0E0"
+        "white": "#35B1D2"
       }
     }
   },
@@ -7895,7 +7895,7 @@
         "foreground": "#F7F7F7"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#242424",
         "red": "#C75646",
         "green": "#8EB33B",
         "yellow": "#D0B03C",
@@ -7953,7 +7953,7 @@
         "foreground": "#99A3A2"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#242626",
         "red": "#A2686A",
         "green": "#9AA56A",
         "yellow": "#A3906A",
@@ -7970,7 +7970,7 @@
         "blue": "#62B1DF",
         "magenta": "#606EDF",
         "cyan": "#64E39C",
-        "white": "#D2E0DE"
+        "white": "#99A3A2"
       }
     }
   },
@@ -7982,7 +7982,7 @@
         "foreground": "#D2D8D9"
       },
       "normal": {
-        "black": "#25292A",
+        "black": "#3D3F41",
         "red": "#F24840",
         "green": "#629655",
         "yellow": "#B68800",
@@ -8011,7 +8011,7 @@
         "foreground": "#9CC2C3"
       },
       "normal": {
-        "black": "#002831",
+        "black": "#001E27",
         "red": "#D11C24",
         "green": "#6CBE6C",
         "yellow": "#A57706",
@@ -8028,7 +8028,7 @@
         "blue": "#178EC8",
         "magenta": "#E24D8E",
         "cyan": "#00B39E",
-        "white": "#FCF4DC"
+        "white": "#9CC2C3"
       }
     }
   },
@@ -8040,7 +8040,7 @@
         "foreground": "#839496"
       },
       "normal": {
-        "black": "#073642",
+        "black": "#002B36",
         "red": "#DC322F",
         "green": "#859900",
         "yellow": "#CF9A6B",
@@ -8057,7 +8057,7 @@
         "blue": "#6c71c4",
         "magenta": "#D33682",
         "cyan": "#2AA198",
-        "white": "#FDF6E3"
+        "white": "#839496"
       }
     }
   },
@@ -8069,7 +8069,7 @@
         "foreground": "#657B83"
       },
       "normal": {
-        "black": "#EEE8D5",
+        "black": "#FDF6E3",
         "red": "#DC322F",
         "green": "#859900",
         "yellow": "#B58900",
@@ -8086,7 +8086,7 @@
         "blue": "#6C71C4",
         "magenta": "#D33682",
         "cyan": "#2AA198",
-        "white": "#073642"
+        "white": "#657B83"
       }
     }
   },
@@ -8127,7 +8127,7 @@
         "foreground": "#ECF0C1"
       },
       "normal": {
-        "black": "#6E5346",
+        "black": "#0A1E24",
         "red": "#E35B00",
         "green": "#5CAB96",
         "yellow": "#E3CD7B",
@@ -8144,7 +8144,7 @@
         "blue": "#67A0CE",
         "magenta": "#FF8A3A",
         "cyan": "#83A7B4",
-        "white": "#FEFFF1"
+        "white": "#ECF0C1"
       }
     }
   },
@@ -8156,7 +8156,7 @@
         "foreground": "#C9C6BC"
       },
       "normal": {
-        "black": "#15171C",
+        "black": "#222222",
         "red": "#B24A56",
         "green": "#92B477",
         "yellow": "#C6735A",
@@ -8173,7 +8173,7 @@
         "blue": "#5486C0",
         "magenta": "#BF83C1",
         "cyan": "#58C2C1",
-        "white": "#FFFFFF"
+        "white": "#C9C6BC"
       }
     }
   },
@@ -8185,7 +8185,7 @@
         "foreground": "#BDBAAE"
       },
       "normal": {
-        "black": "#15171C",
+        "black": "#222222",
         "red": "#EC5F67",
         "green": "#81A764",
         "yellow": "#FEC254",
@@ -8202,7 +8202,7 @@
         "blue": "#4D84D1",
         "magenta": "#FF55FF",
         "cyan": "#83E9E4",
-        "white": "#FFFFFF"
+        "white": "#BDBAAE"
       }
     }
   },
@@ -8214,7 +8214,7 @@
         "foreground": "#B3B8C3"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#20242D",
         "red": "#B04B57",
         "green": "#87B379",
         "yellow": "#E5C179",
@@ -8231,7 +8231,7 @@
         "blue": "#7D8FA4",
         "magenta": "#A47996",
         "cyan": "#85A7A5",
-        "white": "#FFFFFF"
+        "white": "#B3B8C3"
       }
     }
   },
@@ -8243,7 +8243,7 @@
         "foreground": "#F4F5F0"
       },
       "normal": {
-        "black": "#212322",
+        "black": "#072B31",
         "red": "#FF585D",
         "green": "#78D64B",
         "yellow": "#FBDD40",
@@ -8260,7 +8260,7 @@
         "blue": "#69B3E7",
         "magenta": "#F99FC9",
         "cyan": "#00C1D5",
-        "white": "#D9E1E2"
+        "white": "#F4F5F0"
       }
     }
   },
@@ -8272,7 +8272,7 @@
         "foreground": "#ECF0C1"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#0A1E24",
         "red": "#FF4D83",
         "green": "#1F8C3B",
         "yellow": "#1FC95B",
@@ -8289,7 +8289,7 @@
         "blue": "#15A9FD",
         "magenta": "#8959A8",
         "cyan": "#3E999F",
-        "white": "#FFFFFF"
+        "white": "#ECF0C1"
       }
     }
   },
@@ -8301,7 +8301,7 @@
         "foreground": "#A1A1A1"
       },
       "normal": {
-        "black": "#050505",
+        "black": "#0A1E24",
         "red": "#E9897C",
         "green": "#B6377D",
         "yellow": "#ECEBBE",
@@ -8318,7 +8318,7 @@
         "blue": "#B6DEFB",
         "magenta": "#AD7FA8",
         "cyan": "#D7D9FC",
-        "white": "#E2E2E2"
+        "white": "#A1A1A1"
       }
     }
   },
@@ -8359,7 +8359,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#666666",
+        "black": "#272822",
         "red": "#FF1E8E",
         "green": "#8EFF1E",
         "yellow": "#FFFB00",
@@ -8376,7 +8376,7 @@
         "blue": "#1E8EFF",
         "magenta": "#E500E5",
         "cyan": "#00E5E5",
-        "white": "#E5E5E5"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -8388,7 +8388,7 @@
         "foreground": "#C9C9C9"
       },
       "normal": {
-        "black": "#302B2A",
+        "black": "#1A1818",
         "red": "#A7463D",
         "green": "#587744",
         "yellow": "#9D602A",
@@ -8405,7 +8405,7 @@
         "blue": "#7999F7",
         "magenta": "#FD8AA1",
         "cyan": "#FAD484",
-        "white": "#FFFFFF"
+        "white": "#C9C9C9"
       }
     }
   },
@@ -8434,7 +8434,7 @@
         "blue": "#7CB7FF",
         "magenta": "#C74DED",
         "cyan": "#00C1E4",
-        "white": "#DCDFE4"
+        "white": "#C3C7D1"
       }
     }
   },
@@ -8446,7 +8446,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#3F3F54",
+        "black": "#222235",
         "red": "#F60055",
         "green": "#06C993",
         "yellow": "#9700BE",
@@ -8533,7 +8533,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#011627",
+        "black": "#262335",
         "red": "#FE4450",
         "green": "#72F1B8",
         "yellow": "#FEDE5D",
@@ -8562,7 +8562,7 @@
         "foreground": "#D0D0D0"
       },
       "normal": {
-        "black": "#1C1C1C",
+        "black": "#262626",
         "red": "#D68686",
         "green": "#AED686",
         "yellow": "#D7AF87",
@@ -8579,7 +8579,7 @@
         "blue": "#86AED6",
         "magenta": "#D6AED6",
         "cyan": "#B1E7DD",
-        "white": "#EFEFEF"
+        "white": "#D0D0D0"
       }
     }
   },
@@ -8591,7 +8591,7 @@
         "foreground": "#EEEEEE"
       },
       "normal": {
-        "black": "#1D1D1D",
+        "black": "#282828",
         "red": "#C5152F",
         "green": "#C9D05C",
         "yellow": "#FFC24B",
@@ -8608,7 +8608,7 @@
         "blue": "#C0EAFB",
         "magenta": "#EFD093",
         "cyan": "#A1D6EC",
-        "white": "#FFFFFF"
+        "white": "#EEEEEE"
       }
     }
   },
@@ -8620,7 +8620,7 @@
         "foreground": "#000000"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#ffffff",
         "red": "#990000",
         "green": "#00a600",
         "yellow": "#999900",
@@ -8637,7 +8637,7 @@
         "blue": "#0000ff",
         "magenta": "#e500e5",
         "cyan": "#00e5e5",
-        "white": "#e5e5e5"
+        "white": "#000000"
       }
     }
   },
@@ -8649,7 +8649,7 @@
         "foreground": "#868A8C"
       },
       "normal": {
-        "black": "#282A2E",
+        "black": "#091116",
         "red": "#A54242",
         "green": "#A1B56C",
         "yellow": "#DE935F",
@@ -8666,7 +8666,7 @@
         "blue": "#449DA1",
         "magenta": "#BA8BAF",
         "cyan": "#86C1B9",
-        "white": "#C5C8C6"
+        "white": "#868A8C"
       }
     }
   },
@@ -8695,7 +8695,7 @@
         "blue": "#3F78FF",
         "magenta": "#9E6FFE",
         "cyan": "#23CFD5",
-        "white": "#F8F8F2"
+        "white": "#F8F8F8"
       }
     }
   },
@@ -8707,7 +8707,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#2E2E35",
         "red": "#8D534E",
         "green": "#4E8D53",
         "yellow": "#888D4E",
@@ -8736,7 +8736,7 @@
         "foreground": "#565A6E"
       },
       "normal": {
-        "black": "#0F0F14",
+        "black": "#D5D6DB",
         "red": "#8C4351",
         "green": "#485E30",
         "yellow": "#8F5E15",
@@ -8753,7 +8753,7 @@
         "blue": "#34548A",
         "magenta": "#5A4A78",
         "cyan": "#0F4B6E",
-        "white": "#343B58"
+        "white": "#565A6E"
       }
     }
   },
@@ -8765,7 +8765,7 @@
         "foreground": "#C0CAF5"
       },
       "normal": {
-        "black": "#414868",
+        "black": "#24283B",
         "red": "#F7768E",
         "green": "#9ECE6A",
         "yellow": "#E0AF68",
@@ -8794,7 +8794,7 @@
         "foreground": "#C0CAF5"
       },
       "normal": {
-        "black": "#414868",
+        "black": "#1A1B26",
         "red": "#F7768E",
         "green": "#9ECE6A",
         "yellow": "#E0AF68",
@@ -8823,7 +8823,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#00346E",
+        "black": "#002451",
         "red": "#FF9DA4",
         "green": "#D1F1A9",
         "yellow": "#FFEEAD",
@@ -8852,7 +8852,7 @@
         "foreground": "#EAEAEA"
       },
       "normal": {
-        "black": "#2A2A2A",
+        "black": "#000000",
         "red": "#D54E53",
         "green": "#B9CA4A",
         "yellow": "#E7C547",
@@ -8869,7 +8869,7 @@
         "blue": "#7AA6DA",
         "magenta": "#C397D8",
         "cyan": "#70C0B1",
-        "white": "#FFFFFF"
+        "white": "#EAEAEA"
       }
     }
   },
@@ -8881,7 +8881,7 @@
         "foreground": "#CCCCCC"
       },
       "normal": {
-        "black": "#393939",
+        "black": "#2D2D2D",
         "red": "#F2777A",
         "green": "#99CC99",
         "yellow": "#FFCC66",
@@ -8898,7 +8898,7 @@
         "blue": "#6699CC",
         "magenta": "#CC99CC",
         "cyan": "#66CCCC",
-        "white": "#FFFFFF"
+        "white": "#CCCCCC"
       }
     }
   },
@@ -8910,7 +8910,7 @@
         "foreground": "#C5C8C6"
       },
       "normal": {
-        "black": "#282A2E",
+        "black": "#1D1F21",
         "red": "#CC6666",
         "green": "#B5BD68",
         "yellow": "#F0C674",
@@ -8927,7 +8927,7 @@
         "blue": "#81A2BE",
         "magenta": "#B294BB",
         "cyan": "#8ABEB7",
-        "white": "#FFFFFF"
+        "white": "#C5C8C6"
       }
     }
   },
@@ -8939,7 +8939,7 @@
         "foreground": "#4D4D4C"
       },
       "normal": {
-        "black": "#E0E0E0",
+        "black": "#FFFFFF",
         "red": "#C82829",
         "green": "#718C00",
         "yellow": "#EAB700",
@@ -8956,7 +8956,7 @@
         "blue": "#4271AE",
         "magenta": "#8959A8",
         "cyan": "#3E999F",
-        "white": "#1D1F21"
+        "white": "#4D4D4C"
       }
     }
   },
@@ -8968,7 +8968,7 @@
         "foreground": "#31D07B"
       },
       "normal": {
-        "black": "#2C3F58",
+        "black": "#24364B",
         "red": "#BE2D26",
         "green": "#1A9172",
         "yellow": "#DB8E27",
@@ -8985,7 +8985,7 @@
         "blue": "#34A6DA",
         "magenta": "#AE6BDC",
         "cyan": "#42C3AE",
-        "white": "#D5D5D5"
+        "white": "#31D07B"
       }
     }
   },
@@ -8997,7 +8997,7 @@
         "foreground": "#786B53"
       },
       "normal": {
-        "black": "#321300",
+        "black": "#191919",
         "red": "#B2270E",
         "green": "#44A900",
         "yellow": "#AA820C",
@@ -9014,7 +9014,7 @@
         "blue": "#85CFED",
         "magenta": "#E14C5A",
         "cyan": "#F07D14",
-        "white": "#FFC800"
+        "white": "#786B53"
       }
     }
   },
@@ -9055,7 +9055,7 @@
         "foreground": "#23476A"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#FEFFEE",
         "red": "#C21B6F",
         "green": "#6FC21B",
         "yellow": "#C26F1B",
@@ -9072,7 +9072,7 @@
         "blue": "#84B9EE",
         "magenta": "#B984EE",
         "cyan": "#84EEB9",
-        "white": "#E5E5E5"
+        "white": "#23476A"
       }
     }
   },
@@ -9084,7 +9084,7 @@
         "foreground": "#877A9B"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#1B1B23",
         "red": "#B0425B",
         "green": "#37A415",
         "yellow": "#AD5C42",
@@ -9101,7 +9101,7 @@
         "blue": "#867AED",
         "magenta": "#A05EEE",
         "cyan": "#EAEAEA",
-        "white": "#BFA3FF"
+        "white": "#877A9B"
       }
     }
   },
@@ -9113,7 +9113,7 @@
         "foreground": "#D9E6F2"
       },
       "normal": {
-        "black": "#303030",
+        "black": "#191F1D",
         "red": "#A87139",
         "green": "#39A871",
         "yellow": "#71A839",
@@ -9130,7 +9130,7 @@
         "blue": "#763BB0",
         "magenta": "#B03B76",
         "cyan": "#3B76B0",
-        "white": "#CFCFCF"
+        "white": "#D9E6F2"
       }
     }
   },
@@ -9159,7 +9159,7 @@
         "blue": "#5555FF",
         "magenta": "#EC93D3",
         "cyan": "#93E0E3",
-        "white": "#FFFFFF"
+        "white": "#DCDCCC"
       }
     }
   },
@@ -9171,7 +9171,7 @@
         "foreground": "#FFFFFF"
       },
       "normal": {
-        "black": "#878787",
+        "black": "#000000",
         "red": "#FF6600",
         "green": "#CCFF04",
         "yellow": "#FFCC00",
@@ -9188,7 +9188,7 @@
         "blue": "#0000FF",
         "magenta": "#FF00FF",
         "cyan": "#00FFFF",
-        "white": "#E5E5E5"
+        "white": "#FFFFFF"
       }
     }
   },
@@ -9200,7 +9200,7 @@
         "foreground": "#CCCCCC"
       },
       "normal": {
-        "black": "#6A787A",
+        "black": "#1E1E1E",
         "red": "#E9653B",
         "green": "#39E9A8",
         "yellow": "#E5B684",
@@ -9217,7 +9217,7 @@
         "blue": "#009AFB",
         "magenta": "#FF578F",
         "cyan": "#5FFFFF",
-        "white": "#D9FBFF"
+        "white": "#CCCCCC"
       }
     }
   },
@@ -9229,7 +9229,7 @@
         "foreground": "#020202"
       },
       "normal": {
-        "black": "#020202",
+        "black": "#F9F9F9",
         "red": "#CD3232",
         "green": "#00BC00",
         "yellow": "#A5A900",
@@ -9246,7 +9246,7 @@
         "blue": "#0752A8",
         "magenta": "#C451CE",
         "cyan": "#52A8C7",
-        "white": "#A6A3A6"
+        "white": "#020202"
       }
     }
   },
@@ -9258,7 +9258,7 @@
         "foreground": "#AFDAB6"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#404040",
         "red": "#E24346",
         "green": "#39B13A",
         "yellow": "#DAE145",
@@ -9275,7 +9275,7 @@
         "blue": "#7B91D6",
         "magenta": "#F674BA",
         "cyan": "#5ED1E5",
-        "white": "#D8C8BB"
+        "white": "#AFDAB6"
       }
     }
   },
@@ -9287,7 +9287,7 @@
         "foreground": "#d1b890"
       },
       "normal": {
-        "black": "#183c44",
+        "black": "#132f35",
         "red": "#da4949",
         "green": "#bcca15",
         "yellow": "#ffb02e",
@@ -9304,7 +9304,7 @@
         "blue": "#4cbfff",
         "magenta": "#ff4cc2",
         "cyan": "#35ffb6",
-        "white": "#ffd48f"
+        "white": "#d1b890"
       }
     }
   },
@@ -9333,7 +9333,7 @@
         "blue": "#5555FF",
         "magenta": "#FF55FF",
         "cyan": "#55FFFF",
-        "white": "#FFFFFF"
+        "white": "#B3B3B3"
       }
     }
   },
@@ -9345,7 +9345,7 @@
         "foreground": "#DAFAFF"
       },
       "normal": {
-        "black": "#000507",
+        "black": "#1F1726",
         "red": "#D94085",
         "green": "#2AB250",
         "yellow": "#FFD16F",
@@ -9362,7 +9362,7 @@
         "blue": "#308CBA",
         "magenta": "#AE636B",
         "cyan": "#FF919D",
-        "white": "#E4838D"
+        "white": "#DAFAFF"
       }
     }
   },
@@ -9374,7 +9374,7 @@
         "foreground": "#DEDACF"
       },
       "normal": {
-        "black": "#000000",
+        "black": "#171717",
         "red": "#FF615A",
         "green": "#B1E969",
         "yellow": "#EBD99C",
@@ -9391,7 +9391,7 @@
         "blue": "#A5C7FF",
         "magenta": "#DDAAFF",
         "cyan": "#B7FFF9",
-        "white": "#FFFFFF"
+        "white": "#DEDACF"
       }
     }
   },
@@ -9403,7 +9403,7 @@
         "foreground": "#999993"
       },
       "normal": {
-        "black": "#333333",
+        "black": "#101010",
         "red": "#8C4665",
         "green": "#287373",
         "yellow": "#7C7C99",
@@ -9420,7 +9420,7 @@
         "blue": "#477AB3",
         "magenta": "#7E62B3",
         "cyan": "#6096BF",
-        "white": "#C0C0C0"
+        "white": "#999993"
       }
     }
   },
@@ -9432,7 +9432,7 @@
         "foreground": "#FCFCFA"
       },
       "normal": {
-        "black": "#2E3436",
+        "black": "#424043",
         "red": "#FC6386",
         "green": "#A9DC76",
         "yellow": "#FCE94F",
@@ -9449,7 +9449,7 @@
         "blue": "#FB976B",
         "magenta": "#AB9DF2",
         "cyan": "#34E2E2",
-        "white": "#D1D1C0"
+        "white": "#FCFCFA"
       }
     }
   },
@@ -9461,7 +9461,7 @@
         "foreground": "#dcdccc"
       },
       "normal": {
-        "black": "#333333",
+        "black": "#3a3a3a",
         "red": "#cc9393",
         "green": "#efef87",
         "yellow": "#ffd7a7",

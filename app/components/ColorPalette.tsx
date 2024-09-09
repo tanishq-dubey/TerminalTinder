@@ -7,7 +7,7 @@ interface ColorPaletteProps {
 
 const ColorPalette: React.FC<ColorPaletteProps> = ({ colors, size = 'small' }) => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
-  const [hoveredColor, setHoveredColor] = useState<string | null>(null);
+  const [hoveredColorId, setHoveredColorId] = useState<string | null>(null);
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleColorClick = (color: string) => {
@@ -39,33 +39,36 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ colors, size = 'small' }) =
   return (
     <>
       <div className={`grid grid-cols-8 gap-2 ${size === 'large' ? 'mb-4' : 'mb-2'} z-10`}>
-        {colors.map((color, index) => (
-          <div 
-            key={index} 
-            className={`${sizeClasses} rounded-sm cursor-pointer relative group`}
-            style={{backgroundColor: color}}
-            onClick={() => handleColorClick(color)}
-            onMouseEnter={() => setHoveredColor(color)}
-            onMouseLeave={() => setHoveredColor(null)}
-          >
-            {size === 'small' && hoveredColor === color && (
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-white dark:bg-gray-800 rounded shadow-lg z-10">
-                <div className="w-4 h-4 rounded-sm mb-1" style={{backgroundColor: color}}></div>
-                <span className="text-xs">{color}</span>
-              </div>
-            )}
-            {size === 'large' && (
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-[8px]">
-                {color}
-              </div>
-            )}
-            {copiedColor === color && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white text-xs">
-                Copied!
-              </div>
-            )}
-          </div>
-        ))}
+        {colors.map((color, index) => {
+          const colorId = `color-${index}-${color}`;
+          return (
+            <div 
+              key={colorId}
+              className={`${sizeClasses} rounded-sm cursor-pointer relative group`}
+              style={{backgroundColor: color}}
+              onClick={() => handleColorClick(color)}
+              onMouseEnter={() => setHoveredColorId(colorId)}
+              onMouseLeave={() => setHoveredColorId(null)}
+            >
+              {size === 'small' && hoveredColorId === colorId && (
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-white dark:bg-gray-800 rounded shadow-lg z-10">
+                  <div className="w-4 h-4 rounded-sm mb-1" style={{backgroundColor: color}}></div>
+                  <span className="text-xs">{color}</span>
+                </div>
+              )}
+              {size === 'large' && (
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-[8px]">
+                  {color}
+                </div>
+              )}
+              {copiedColor === color && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white text-xs">
+                  Copied!
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
       <textarea
         ref={textAreaRef}

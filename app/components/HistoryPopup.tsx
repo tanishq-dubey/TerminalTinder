@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ColorScheme } from '../utils/colorSchemes';
-import { generateYAML } from '../utils/yamlExport';
+import { generateYAML, generateJSON, generateXResources, generateTOML } from '../utils/exportFormats';
 import Image from 'next/image';
 import ColorPalette from './ColorPalette';
 
@@ -9,18 +9,40 @@ interface HistoryPopupProps {
   dislikedSchemes: ColorScheme[];
   onClose: () => void;
   isDarkMode: boolean;
+  outputFormat: string;
 }
 
-const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchemes, onClose, isDarkMode }) => {
+const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchemes, onClose, isDarkMode, outputFormat }) => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
 
   const handleDownload = (scheme: ColorScheme) => {
-    const yaml = generateYAML(scheme);
-    const blob = new Blob([yaml], { type: 'text/yaml' });
+    let content: string;
+    let fileExtension: string;
+
+    switch (outputFormat) {
+      case 'json':
+        content = generateJSON(scheme);
+        fileExtension = 'json';
+        break;
+      case 'xresources':
+        content = generateXResources(scheme);
+        fileExtension = 'Xresources';
+        break;
+      case 'toml':
+        content = generateTOML(scheme);
+        fileExtension = 'toml';
+        break;
+      case 'yaml':
+      default:
+        content = generateYAML(scheme);
+        fileExtension = 'yaml';
+    }
+
+    const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${scheme.name.replace(/\s+/g, '_').toLowerCase()}.yaml`;
+    a.download = `${scheme.name.replace(/\s+/g, '_').toLowerCase()}.${fileExtension}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

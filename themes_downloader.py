@@ -28,7 +28,7 @@ def map_theme_colors(theme_data):
                 "foreground": theme_data.get("foreground", "#FFFFFF"),
             },
             "normal": {
-                "black": theme_data.get("color_01", "#000000"),
+                "black": theme_data.get("background", "#000000"),
                 "red": theme_data.get("color_02", "#000000"),
                 "green": theme_data.get("color_03", "#000000"),
                 "yellow": theme_data.get("color_04", "#000000"),
@@ -45,7 +45,7 @@ def map_theme_colors(theme_data):
                 "blue": theme_data.get("color_13", "#000000"),
                 "magenta": theme_data.get("color_14", "#000000"),
                 "cyan": theme_data.get("color_15", "#000000"),
-                "white": theme_data.get("color_16", "#000000"),
+                "white": theme_data.get("foreground", "#000000"),
             }
         }
     }

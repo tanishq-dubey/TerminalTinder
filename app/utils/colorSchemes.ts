@@ -1,15 +1,16 @@
-type Color = string; // Hex color code
+import Color from 'color';
+
 type ColorScheme = {
   name: string;
   colors: {
-    primary: { background: Color; foreground: Color };
+    primary: { background: string; foreground: string };
     normal: {
-      black: Color; red: Color; green: Color; yellow: Color;
-      blue: Color; magenta: Color; cyan: Color; white: Color;
+      black: string; red: string; green: string; yellow: string;
+      blue: string; magenta: string; cyan: string; white: string;
     };
     bright: {
-      black: Color; red: Color; green: Color; yellow: Color;
-      blue: Color; magenta: Color; cyan: Color; white: Color;
+      black: string; red: string; green: string; yellow: string;
+      blue: string; magenta: string; cyan: string; white: string;
     };
   };
 };
@@ -18,61 +19,108 @@ import knownSchemesData from '../../formatted_themes.json';
 
 const knownSchemes: ColorScheme[] = knownSchemesData;
 
-function generateRandomColor(): Color {
+function generateRandomColor(): string {
   return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
 }
 
-function generateCreativeName(): string {
-  const adjectives = ['Cosmic', 'Neon', 'Mystic', 'Retro', 'Cyber', 'Ethereal', 'Vibrant', 'Dreamy', 'Futuristic', 'Nostalgic'];
-  const nouns = ['Sunset', 'Aurora', 'Galaxy', 'Ocean', 'Forest', 'Desert', 'Nebula', 'Horizon', 'Oasis', 'Metropolis'];
-  return `${adjectives[Math.floor(Math.random() * adjectives.length)]} ${nouns[Math.floor(Math.random() * nouns.length)]}`;
+function generateCreativeName(colors: { [key: string]: string }): string {
+  const allColors = Object.values(colors);
+  const dominantColor = getDominantColor(allColors);
+  const mood = getMood(allColors);
+  const theme = getTheme(dominantColor);
+
+  const nameComponents = [mood, theme].filter(Boolean);
+  if (nameComponents.length === 1) {
+    nameComponents.push(getRandomAdjective(dominantColor));
+  }
+
+  return nameComponents.join(' ');
+}
+
+function getDominantColor(colors: string[]): Color {
+  return colors.reduce((dominant, color) => {
+    const current = Color(color);
+    return current.luminosity() > dominant.luminosity() ? current : dominant;
+  }, Color(colors[0]));
+}
+
+function getMood(colors: string[]): string {
+  const avgSaturation = colors.reduce((sum, color) => sum + Color(color).saturationl(), 0) / colors.length;
+  const avgLightness = colors.reduce((sum, color) => sum + Color(color).lightness(), 0) / colors.length;
+
+  if (avgSaturation > 50 && avgLightness > 50) return 'Vibrant';
+  if (avgSaturation < 30 && avgLightness < 40) return 'Muted';
+  if (avgLightness > 70) return 'Bright';
+  if (avgLightness < 30) return 'Dark';
+  return '';
+}
+
+function getTheme(dominantColor: Color): string {
+  const hue = dominantColor.hue();
+  const themes = [
+    { name: 'Sunset', range: [0, 60] },
+    { name: 'Citrus', range: [45, 90] },
+    { name: 'Forest', range: [90, 150] },
+    { name: 'Ocean', range: [150, 210] },
+    { name: 'Twilight', range: [210, 270] },
+    { name: 'Lavender', range: [270, 330] },
+    { name: 'Berry', range: [330, 360] },
+  ];
+
+  const theme = themes.find(t => hue >= t.range[0] && hue < t.range[1]);
+  return theme ? theme.name : '';
+}
+
+function getRandomAdjective(color: Color): string {
+  const adjectives = {
+    warm: ['Cozy', 'Toasty', 'Snug'],
+    cool: ['Crisp', 'Fresh', 'Breezy'],
+    neutral: ['Balanced', 'Harmonious', 'Zen'],
+    bright: ['Radiant', 'Luminous', 'Gleaming'],
+    dark: ['Mysterious', 'Enigmatic', 'Shadowy'],
+  };
+
+  const hue = color.hue();
+  const lightness = color.lightness();
+
+  let category: keyof typeof adjectives;
+  if (hue < 60 || hue > 300) category = 'warm';
+  else if (hue >= 60 && hue <= 300) category = 'cool';
+  else if (lightness > 70) category = 'bright';
+  else if (lightness < 30) category = 'dark';
+  else category = 'neutral';
+
+  return adjectives[category][Math.floor(Math.random() * adjectives[category].length)];
 }
 
 function generateRandomScheme(): ColorScheme {
-  let x = {
-    name: generateCreativeName() + "rand",
-    colors: {
-      primary: { background: generateRandomColor(), foreground: generateRandomColor() },
-      normal: {
-        black: generateRandomColor(), red: generateRandomColor(), green: generateRandomColor(), yellow: generateRandomColor(),
-        blue: generateRandomColor(), magenta: generateRandomColor(), cyan: generateRandomColor(), white: generateRandomColor()
-      },
-      bright: {
-        black: generateRandomColor(), red: generateRandomColor(), green: generateRandomColor(), yellow: generateRandomColor(),
-        blue: generateRandomColor(), magenta: generateRandomColor(), cyan: generateRandomColor(), white: generateRandomColor()
-      }
+  const colors = {
+    primary: { background: generateRandomColor(), foreground: generateRandomColor() },
+    normal: {
+      black: generateRandomColor(), red: generateRandomColor(), green: generateRandomColor(), yellow: generateRandomColor(),
+      blue: generateRandomColor(), magenta: generateRandomColor(), cyan: generateRandomColor(), white: generateRandomColor()
+    },
+    bright: {
+      black: generateRandomColor(), red: generateRandomColor(), green: generateRandomColor(), yellow: generateRandomColor(),
+      blue: generateRandomColor(), magenta: generateRandomColor(), cyan: generateRandomColor(), white: generateRandomColor()
     }
   };
 
-  x.colors.primary.background = x.colors.normal.black;
-  x.colors.primary.foreground = x.colors.bright.white;
+  colors.primary.background = colors.normal.black;
+  colors.primary.foreground = colors.bright.white;
 
-  return x;
-}
-
-function crossTitles(title1: string, title2: string): string {
-  const words1 = title1.split(' ');
-  const words2 = title2.split(' ');
-  const firstWord = Math.random() < 0.5 ? words1[0] : words2[1];
-  const secondWord = Math.random() < 0.5 ? words2[0] : words1[1];
-  return `${firstWord} ${secondWord}`;
-}
-
-function mutateColor(color: Color): Color {
-  const r = parseInt(color.slice(1, 3), 16);
-  const g = parseInt(color.slice(3, 5), 16);
-  const b = parseInt(color.slice(5, 7), 16);
-
-  const mutateComponent = (component: number) => {
-    const mutation = Math.floor(Math.random() * 51) - 25; // Random number between -25 and 25
-    return Math.max(0, Math.min(255, component + mutation));
+  return {
+    name: generateCreativeName({ ...colors.normal, ...colors.bright }),
+    colors: colors
   };
+}
 
-  const newR = mutateComponent(r);
-  const newG = mutateComponent(g);
-  const newB = mutateComponent(b);
-
-  return `#${newR.toString(16).padStart(2, '0')}${newG.toString(16).padStart(2, '0')}${newB.toString(16).padStart(2, '0')}`;
+function mutateColor(color: string): string {
+  const c = Color(color);
+  const hue = (c.hue() + Math.random() * 30 - 15 + 360) % 360;
+  const saturation = Math.max(0, Math.min(100, c.saturationl() + Math.random() * 20 - 10));
+  const lightness = Math.max(0, Math.min(100, c.lightness() + Math.random() * 20 - 10));
+  return c.hsl(hue, saturation, lightness).hex();
 }
 
 function generateSchemeFromGeneticAlgorithm(likedSchemes: ColorScheme[], dislikedSchemes: ColorScheme[]): ColorScheme {
@@ -84,26 +132,26 @@ function generateSchemeFromGeneticAlgorithm(likedSchemes: ColorScheme[], dislike
   const newScheme: ColorScheme = JSON.parse(JSON.stringify(parentScheme)); // Deep copy
 
   // Mutate colors
-  Object.keys(newScheme.colors).forEach((colorGroup) => {
-    Object.keys(newScheme.colors[colorGroup]).forEach((colorName) => {
+  Object.keys(newScheme.colors).forEach((colorGroup: keyof typeof newScheme.colors) => {
+    Object.keys(newScheme.colors[colorGroup]).forEach((colorName: string) => {
       if (Math.random() < 0.3) { // 30% chance of mutation
-        newScheme.colors[colorGroup][colorName] = mutateColor(newScheme.colors[colorGroup][colorName]);
+        (newScheme.colors[colorGroup] as any)[colorName] = mutateColor((newScheme.colors[colorGroup] as any)[colorName]);
       }
     });
   });
 
   // Avoid similarities with disliked schemes
   dislikedSchemes.forEach(dislikedScheme => {
-    Object.keys(newScheme.colors).forEach((colorGroup) => {
-      Object.keys(newScheme.colors[colorGroup]).forEach((colorName) => {
-        if (newScheme.colors[colorGroup][colorName] === dislikedScheme.colors[colorGroup][colorName]) {
-          newScheme.colors[colorGroup][colorName] = mutateColor(newScheme.colors[colorGroup][colorName]);
+    Object.keys(newScheme.colors).forEach((colorGroup: keyof typeof newScheme.colors) => {
+      Object.keys(newScheme.colors[colorGroup]).forEach((colorName: string) => {
+        if ((newScheme.colors[colorGroup] as any)[colorName] === (dislikedScheme.colors[colorGroup] as any)[colorName]) {
+          (newScheme.colors[colorGroup] as any)[colorName] = mutateColor((newScheme.colors[colorGroup] as any)[colorName]);
         }
       });
     });
   });
 
-  newScheme.name = generateCreativeName() + "gen";
+  newScheme.name = generateCreativeName({ ...newScheme.colors.normal, ...newScheme.colors.bright });
   return newScheme;
 }
 

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ColorSchemeCard from "./components/ColorSchemeCard";
 import HistoryPopup from "./components/HistoryPopup";
+import Settings from "./components/Settings";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
 
@@ -13,6 +14,10 @@ export default function Home() {
   const [likedSchemes, setLikedSchemes] = useState<ColorScheme[]>([]);
   const [dislikedSchemes, setDislikedSchemes] = useState<ColorScheme[]>([]);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [outputFormat, setOutputFormat] = useState('yaml');
+  const [codeSample, setCodeSample] = useState('javascript');
+  const [saveSettings, setSaveSettings] = useState(false);
 
   useEffect(() => {
     generateNewSchemes(8);
@@ -24,6 +29,15 @@ export default function Home() {
     }
     if (storedDislikedSchemes) {
       setDislikedSchemes(JSON.parse(storedDislikedSchemes));
+    }
+    
+    // Load settings from cookie if available
+    const storedSettings = document.cookie.split('; ').find(row => row.startsWith('settings='));
+    if (storedSettings) {
+      const settings = JSON.parse(storedSettings.split('=')[1]);
+      setOutputFormat(settings.outputFormat);
+      setCodeSample(settings.codeSample);
+      setSaveSettings(true);
     }
   }, []);
 
@@ -40,29 +54,26 @@ export default function Home() {
   }, [dislikedSchemes]);
 
   const generateNewSchemes = (count: number) => {
-    const newSchemes = Array(count).fill(null).map(() => {
-      const schemeType = Math.random();
-      if (schemeType < 0.25) {
-        // 25% chance of known scheme
-        return knownSchemes[Math.floor(Math.random() * knownSchemes.length)];
-      } else if (schemeType < 0.5) {
-        // 25% chance of random scheme
-        return generateRandomScheme();
-      } else if (likedSchemes.length > 2 && dislikedSchemes.length > 2) {
-        // 50% chance of genetic scheme if there are more than 2 liked and disliked schemes
-        return generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes);
-      } else {
-        // 30% known, 20% random for other cases
-        if (Math.random() < 0.3) {
-          return generateRandomScheme();
-        } else {
-          return knownSchemes[Math.floor(Math.random() * knownSchemes.length)];
-        }
-      }
-    });
+    const knownCount = Math.floor(count / 2);
+    const generatedCount = count - knownCount;
+    const newSchemes = [
+      ...knownSchemes.sort(() => 0.5 - Math.random()).slice(0, knownCount),
+      ...Array(generatedCount).fill(null).map(() => 
+        likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
+      )
+    ];
 
-    setSchemes(prevSchemes => [...prevSchemes, ...newSchemes]);
+    setSchemes(prevSchemes => [...prevSchemes, ...newSchemes].sort(() => 0.5 - Math.random()));
   };
+  
+  useEffect(() => {
+    if (saveSettings) {
+      const settings = JSON.stringify({ outputFormat, codeSample });
+      document.cookie = `settings=${settings}; max-age=31536000; path=/`; // 1 year expiration
+    } else {
+      document.cookie = 'settings=; max-age=0; path=/';
+    }
+  }, [saveSettings, outputFormat, codeSample]);
 
   const handleLike = (scheme: ColorScheme) => {
     setLikedSchemes(prev => [...prev, scheme]);
@@ -92,6 +103,10 @@ export default function Home() {
     setIsHistoryOpen(!isHistoryOpen);
   };
 
+  const toggleSettings = () => {
+    setIsSettingsOpen(!isSettingsOpen);
+  };
+
   const getAllSchemes = () => {
     const allSchemes = [...likedSchemes, ...dislikedSchemes];
     const uniqueSchemes = allSchemes.filter((scheme, index, self) =>
@@ -101,17 +116,19 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
-      <header className="absolute top-4 left-4 z-10">
-        <Image src="/app-icon.svg" alt="App Icon" width={40} height={40} />
+    <div className="min-h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
+      <header className="absolute top-4 left-4 z-20">
+        <Image src="/app-icon.svg" alt="App Icon" width={32} height={32} />
       </header>
-      <button 
-        className="absolute top-4 right-4 z-10"
-        onClick={toggleHistory}
-      >
-        <Image src={isDarkMode ? "/history-icon-dark.svg" : "/history-icon-light.svg"} alt="History" width={32} height={32} />
-      </button>
-      <main className="flex flex-col items-center justify-center h-full">
+      <div className="absolute top-4 right-4 z-20 flex space-x-2">
+        <button onClick={toggleHistory}>
+          <Image src={isDarkMode ? "/history-icon-dark.svg" : "/history-icon-light.svg"} alt="History" width={24} height={24} />
+        </button>
+        <button onClick={toggleSettings}>
+          <Image src={isDarkMode ? "/settings-icon-dark.svg" : "/settings-icon-light.svg"} alt="Settings" width={24} height={24} />
+        </button>
+      </div>
+      <main className="flex flex-col items-center justify-center h-screen">
         <AnimatePresence>
           {schemes.slice(0, 3).map((scheme, index) => (
             <ColorSchemeCard
@@ -121,6 +138,8 @@ export default function Home() {
               onDislike={() => handleDislike(scheme)}
               index={index}
               isDarkMode={isDarkMode}
+              codeSample={codeSample}
+              outputFormat={outputFormat}
             />
           ))}
         </AnimatePresence>
@@ -131,6 +150,21 @@ export default function Home() {
           dislikedSchemes={dislikedSchemes}
           onClose={toggleHistory}
           isDarkMode={isDarkMode}
+          outputFormat={outputFormat}
+        />
+      )}
+      {isSettingsOpen && (
+        <Settings
+          isOpen={isSettingsOpen}
+          onClose={toggleSettings}
+          isDarkMode={isDarkMode}
+          onToggleDarkMode={() => setIsDarkMode(!isDarkMode)}
+          outputFormat={outputFormat}
+          setOutputFormat={setOutputFormat}
+          codeSample={codeSample}
+          setCodeSample={setCodeSample}
+          saveSettings={saveSettings}
+          setSaveSettings={setSaveSettings}
         />
       )}
     </div>
