@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ColorSchemeCard from "./components/ColorSchemeCard";
 import HistoryPopup from "./components/HistoryPopup";
 import Settings from "./components/Settings";
+import HelpDialog from "./components/HelpDialog";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
 
@@ -15,6 +16,7 @@ export default function Home() {
   const [dislikedSchemes, setDislikedSchemes] = useState<ColorScheme[]>([]);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [outputFormat, setOutputFormat] = useState('yaml');
   const [codeSample, setCodeSample] = useState('javascript');
   const [saveSettings, setSaveSettings] = useState(false);
@@ -107,6 +109,10 @@ export default function Home() {
     setIsSettingsOpen(!isSettingsOpen);
   };
 
+  const toggleHelp = () => {
+    setIsHelpOpen(!isHelpOpen);
+  };
+
   const getAllSchemes = () => {
     const allSchemes = [...likedSchemes, ...dislikedSchemes];
     const uniqueSchemes = allSchemes.filter((scheme, index, self) =>
@@ -117,18 +123,27 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
-      <header className="absolute top-4 left-4 z-20">
-        <Image src="/app-icon.svg" alt="App Icon" width={32} height={32} />
+      <header className="absolute top-2 left-2 right-2 flex justify-between items-start z-20">
+        <div className="flex items-center">
+          <Image src="/app-icon.svg" alt="App Icon" width={32} height={32} className="mr-2" />
+          <div>
+            <h1 className="text-lg font-bold">TerminalTinder</h1>
+            <p className="text-xs">Fall in love with your next color scheme</p>
+          </div>
+        </div>
+        <div className="flex space-x-2">
+          <button onClick={toggleHistory}>
+            <Image src={isDarkMode ? "/history-icon-dark.svg" : "/history-icon-light.svg"} alt="History" width={24} height={24} />
+          </button>
+          <button onClick={toggleSettings}>
+            <Image src={isDarkMode ? "/settings-icon-dark.svg" : "/settings-icon-light.svg"} alt="Settings" width={24} height={24} />
+          </button>
+          <button onClick={toggleHelp}>
+            <Image src={isDarkMode ? "/help-icon-dark.svg" : "/help-icon-light.svg"} alt="Help" width={24} height={24} />
+          </button>
+        </div>
       </header>
-      <div className="absolute top-4 right-4 z-20 flex space-x-2">
-        <button onClick={toggleHistory}>
-          <Image src={isDarkMode ? "/history-icon-dark.svg" : "/history-icon-light.svg"} alt="History" width={24} height={24} />
-        </button>
-        <button onClick={toggleSettings}>
-          <Image src={isDarkMode ? "/settings-icon-dark.svg" : "/settings-icon-light.svg"} alt="Settings" width={24} height={24} />
-        </button>
-      </div>
-      <main className="flex flex-col items-center justify-center h-screen">
+      <main className="flex flex-col items-center justify-center h-screen pt-16 sm:pt-20">
         <AnimatePresence>
           {schemes.slice(0, 3).map((scheme, index) => (
             <ColorSchemeCard
@@ -165,6 +180,13 @@ export default function Home() {
           setCodeSample={setCodeSample}
           saveSettings={saveSettings}
           setSaveSettings={setSaveSettings}
+        />
+      )}
+      {isHelpOpen && (
+        <HelpDialog
+          isOpen={isHelpOpen}
+          onClose={toggleHelp}
+          isDarkMode={isDarkMode}
         />
       )}
     </div>
