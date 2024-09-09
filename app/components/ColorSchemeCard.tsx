@@ -4,6 +4,7 @@ import { ColorScheme } from '../utils/colorSchemes';
 import { generateYAML } from '../utils/yamlExport';
 import { Highlight, themes } from 'prism-react-renderer';
 import { motion, useAnimation } from 'framer-motion';
+import ColorPalette from './ColorPalette';
 
 interface ColorSchemeCardProps {
   scheme: ColorScheme;
@@ -127,19 +128,10 @@ fetchData().then(data => console.log(data)); `;
             )}
           </Highlight>
         </div>
-        <div className="grid grid-cols-8 gap-2 mb-4 z-10">
-          {Object.values(scheme.colors.normal).concat(Object.values(scheme.colors.bright)).map((color, index) => (
-            <div 
-              key={index} 
-              className="w-full pt-full rounded-sm transition-colors duration-300 relative group" 
-              style={{backgroundColor: color}}
-            >
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-[8px]">
-                {color}
-              </div>
-            </div>
-          ))}
-        </div>
+        <ColorPalette 
+          colors={Object.values(scheme.colors.normal).concat(Object.values(scheme.colors.bright))}
+          size="large"
+        />
         <div className="flex justify-center space-x-8 mt-4 z-10">
           <button 
             className="bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition-colors duration-300"

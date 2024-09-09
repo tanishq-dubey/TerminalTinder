@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ColorSchemeCard from "./components/ColorSchemeCard";
+import HistoryPopup from "./components/HistoryPopup";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
 
@@ -11,6 +12,7 @@ export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [likedSchemes, setLikedSchemes] = useState<ColorScheme[]>([]);
   const [dislikedSchemes, setDislikedSchemes] = useState<ColorScheme[]>([]);
+  const [isHistoryOpen, setIsHistoryOpen] = useState(false);
 
   useEffect(() => {
     generateNewSchemes(8);
@@ -86,12 +88,30 @@ export default function Home() {
     setIsDarkMode(prev => !prev);
   };
 
+  const toggleHistory = () => {
+    setIsHistoryOpen(!isHistoryOpen);
+  };
+
+  const getAllSchemes = () => {
+    const allSchemes = [...likedSchemes, ...dislikedSchemes];
+    const uniqueSchemes = allSchemes.filter((scheme, index, self) =>
+      index === self.findIndex((t) => t.name === scheme.name)
+    );
+    return uniqueSchemes.reverse(); // Most recent first
+  };
+
   return (
-    <div className="h-screen w-screen overflow-hidden p-8 font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
-      <header className="flex items-center mb-8">
+    <div className="h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
+      <header className="absolute top-4 left-4 z-10">
         <Image src="/app-icon.svg" alt="App Icon" width={40} height={40} />
       </header>
-      <main className="flex flex-col items-center justify-center h-[calc(100vh-100px)]">
+      <button 
+        className="absolute top-4 right-4 z-10"
+        onClick={toggleHistory}
+      >
+        <Image src={isDarkMode ? "/history-icon-dark.svg" : "/history-icon-light.svg"} alt="History" width={32} height={32} />
+      </button>
+      <main className="flex flex-col items-center justify-center h-full">
         <AnimatePresence>
           {schemes.slice(0, 3).map((scheme, index) => (
             <ColorSchemeCard
@@ -105,6 +125,14 @@ export default function Home() {
           ))}
         </AnimatePresence>
       </main>
+      {isHistoryOpen && (
+        <HistoryPopup
+          likedSchemes={likedSchemes}
+          dislikedSchemes={dislikedSchemes}
+          onClose={toggleHistory}
+          isDarkMode={isDarkMode}
+        />
+      )}
     </div>
   );
 }
