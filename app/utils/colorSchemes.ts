@@ -30,7 +30,7 @@ function generateCreativeName(): string {
 
 function generateRandomScheme(): ColorScheme {
   let x = {
-    name: generateCreativeName(),
+    name: generateCreativeName() + "rand",
     colors: {
       primary: { background: generateRandomColor(), foreground: generateRandomColor() },
       normal: {
@@ -56,45 +56,6 @@ function crossTitles(title1: string, title2: string): string {
   const firstWord = Math.random() < 0.5 ? words1[0] : words2[1];
   const secondWord = Math.random() < 0.5 ? words2[0] : words1[1];
   return `${firstWord} ${secondWord}`;
-}
-
-function crossSchemes(scheme1: ColorScheme, scheme2: ColorScheme): ColorScheme {
-  const crossColor = (color1: Color, color2: Color): Color => {
-    const r = Math.round((parseInt(color1.slice(1, 3), 16) + parseInt(color2.slice(1, 3), 16)) / 2);
-    const g = Math.round((parseInt(color1.slice(3, 5), 16) + parseInt(color2.slice(3, 5), 16)) / 2);
-    const b = Math.round((parseInt(color1.slice(5, 7), 16) + parseInt(color2.slice(5, 7), 16)) / 2);
-    return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
-  };
-
-  return {
-    name: crossTitles(scheme1.name, scheme2.name),
-    colors: {
-      primary: {
-        background: crossColor(scheme1.colors.primary.background, scheme2.colors.primary.background),
-        foreground: crossColor(scheme1.colors.primary.foreground, scheme2.colors.primary.foreground)
-      },
-      normal: {
-        black: crossColor(scheme1.colors.normal.black, scheme2.colors.normal.black),
-        red: crossColor(scheme1.colors.normal.red, scheme2.colors.normal.red),
-        green: crossColor(scheme1.colors.normal.green, scheme2.colors.normal.green),
-        yellow: crossColor(scheme1.colors.normal.yellow, scheme2.colors.normal.yellow),
-        blue: crossColor(scheme1.colors.normal.blue, scheme2.colors.normal.blue),
-        magenta: crossColor(scheme1.colors.normal.magenta, scheme2.colors.normal.magenta),
-        cyan: crossColor(scheme1.colors.normal.cyan, scheme2.colors.normal.cyan),
-        white: crossColor(scheme1.colors.normal.white, scheme2.colors.normal.white)
-      },
-      bright: {
-        black: crossColor(scheme1.colors.bright.black, scheme2.colors.bright.black),
-        red: crossColor(scheme1.colors.bright.red, scheme2.colors.bright.red),
-        green: crossColor(scheme1.colors.bright.green, scheme2.colors.bright.green),
-        yellow: crossColor(scheme1.colors.bright.yellow, scheme2.colors.bright.yellow),
-        blue: crossColor(scheme1.colors.bright.blue, scheme2.colors.bright.blue),
-        magenta: crossColor(scheme1.colors.bright.magenta, scheme2.colors.bright.magenta),
-        cyan: crossColor(scheme1.colors.bright.cyan, scheme2.colors.bright.cyan),
-        white: crossColor(scheme1.colors.bright.white, scheme2.colors.bright.white)
-      }
-    }
-  };
 }
 
 function mutateColor(color: Color): Color {
@@ -142,9 +103,9 @@ function generateSchemeFromGeneticAlgorithm(likedSchemes: ColorScheme[], dislike
     });
   });
 
-  newScheme.name = generateCreativeName();
+  newScheme.name = generateCreativeName() + "gen";
   return newScheme;
 }
 
 export type { ColorScheme };
-export { knownSchemes, generateRandomScheme, crossSchemes, generateSchemeFromGeneticAlgorithm };
+export { knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm };

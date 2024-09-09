@@ -10,9 +10,10 @@ interface ColorSchemeCardProps {
   onLike: () => void;
   onDislike: () => void;
   index: number;
+  isDarkMode: boolean;
 }
 
-const ColorSchemeCard: React.FC<ColorSchemeCardProps> = ({ scheme, onLike, onDislike, index }) => {
+const ColorSchemeCard: React.FC<ColorSchemeCardProps> = ({ scheme, onLike, onDislike, index, isDarkMode }) => {
   const [overlayColor, setOverlayColor] = useState('rgba(0, 0, 0, 0)');
   const controls = useAnimation();
 
@@ -97,7 +98,7 @@ fetchData().then(data => console.log(data)); `;
             className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-300"
             onClick={handleDownload}
           >
-            <Image src="/download-icon.svg" alt="Download" width={24} height={24} />
+            <Image src={isDarkMode ? "/download-icon-dark.svg" : "/download-icon-light.svg"} alt="Download" width={24} height={24} />
           </button>
         </div>
         <div className="bg-gray-100 dark:bg-gray-700 rounded-md mb-4 flex-grow overflow-hidden z-10 shadow-md">
@@ -144,13 +145,13 @@ fetchData().then(data => console.log(data)); `;
             className="bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition-colors duration-300"
             onClick={handleDislike}
           >
-            <Image src="/cross-icon.svg" alt="Dislike" width={28} height={28} />
+            <Image src={isDarkMode ? "/cross-icon-dark.svg" : "/cross-icon-light.svg"} alt="Dislike" width={28} height={28} />
           </button>
           <button 
             className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
             onClick={handleLike}
           >
-            <Image src="/heart-icon.svg" alt="Like" width={28} height={28} />
+            <Image src={isDarkMode ? "/heart-icon-dark.svg" : "/heart-icon-light.svg"} alt="Like" width={28} height={28} />
           </button>
         </div>
       </div>
