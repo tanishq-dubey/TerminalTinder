@@ -152,6 +152,8 @@ function generateSchemeFromGeneticAlgorithm(likedSchemes: ColorScheme[], dislike
   });
 
   newScheme.name = generateCreativeName({ ...newScheme.colors.normal, ...newScheme.colors.bright });
+  newScheme.colors.primary.background = newScheme.colors.normal.black;
+  newScheme.colors.primary.foreground = newScheme.colors.bright.white;
   return newScheme;
 }
 
