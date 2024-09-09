@@ -9,7 +9,6 @@ import HelpDialog from "./components/HelpDialog";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
 import { CodeSample } from './utils/types';
-  
 
 export default function Home() {
   const [schemes, setSchemes] = useState<ColorScheme[]>([]);
@@ -111,6 +110,13 @@ export default function Home() {
     setIsHelpOpen(!isHelpOpen);
   };
 
+  const handleClearHistory = () => {
+    setLikedSchemes([]);
+    setDislikedSchemes([]);
+    localStorage.removeItem('likedSchemes');
+    localStorage.removeItem('dislikedSchemes');
+  };
+
   return (
     <div className="min-h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <header className="absolute top-2 left-2 right-2 flex justify-between items-start z-20">
@@ -154,6 +160,7 @@ export default function Home() {
           likedSchemes={likedSchemes}
           dislikedSchemes={dislikedSchemes}
           onClose={toggleHistory}
+          onClearHistory={handleClearHistory}  // Add this line
           isDarkMode={isDarkMode}
           outputFormat={outputFormat}
         />

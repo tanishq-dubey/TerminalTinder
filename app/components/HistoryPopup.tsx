@@ -8,11 +8,19 @@ interface HistoryPopupProps {
   likedSchemes: ColorScheme[];
   dislikedSchemes: ColorScheme[];
   onClose: () => void;
+  onClearHistory: () => void;  // Add this line
   isDarkMode: boolean;
   outputFormat: string;
 }
 
-const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchemes, onClose, isDarkMode, outputFormat }) => {
+const HistoryPopup: React.FC<HistoryPopupProps> = ({ 
+  likedSchemes, 
+  dislikedSchemes, 
+  onClose, 
+  onClearHistory,  // Add this line
+  isDarkMode, 
+  outputFormat 
+}) => {
   const handleDownload = (scheme: ColorScheme) => {
     let content: string;
     let fileExtension: string;
@@ -60,7 +68,7 @@ const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchem
             />
             <button 
               onClick={() => handleDownload(scheme)}
-              className="w-full bg-blue-500 text-white text-xs py-1 px-2 rounded hover:bg-blue-600 transition-colors duration-300"
+              className="w-full bg-blue-500 text-white text-xs py-1 px-2 rounded hover:bg-blue-600 transition-colors duration-300 mt-2"
             >
               Download
             </button>
@@ -75,9 +83,17 @@ const HistoryPopup: React.FC<HistoryPopupProps> = ({ likedSchemes, dislikedSchem
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-[90vw] h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold">Color Scheme History</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-            <Image src={isDarkMode ? "/close-icon-dark.svg" : "/close-icon-light.svg"} alt="Close" width={24} height={24} />
-          </button>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={onClearHistory}
+              className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition-colors duration-300"
+            >
+              Clear History
+            </button>
+            <button onClick={onClose} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+              <Image src={isDarkMode ? "/close-icon-dark.svg" : "/close-icon-light.svg"} alt="Close" width={24} height={24} />
+            </button>
+          </div>
         </div>
         {renderSchemeGrid(likedSchemes, "Liked Schemes")}
         {renderSchemeGrid(dislikedSchemes, "Disliked Schemes")}
