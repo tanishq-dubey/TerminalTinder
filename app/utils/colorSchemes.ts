@@ -166,28 +166,6 @@ function getTheme(dominantColor: Color): string {
   return theme ? theme.name : '';
 }
 
-// function getRandomAdjective(color: Color): string {
-//   const adjectives = {
-//     warm: ['Cozy', 'Toasty', 'Snug'],
-//     cool: ['Crisp', 'Fresh', 'Breezy'],
-//     neutral: ['Balanced', 'Harmonious', 'Zen'],
-//     bright: ['Radiant', 'Luminous', 'Gleaming'],
-//     dark: ['Mysterious', 'Enigmatic', 'Shadowy'],
-//   };
-
-//   const hue = color.hue();
-//   const lightness = color.lightness();
-
-//   let category: keyof typeof adjectives;
-//   if (hue < 60 || hue > 300) category = 'warm';
-//   else if (hue >= 60 && hue <= 300) category = 'cool';
-//   else if (lightness > 70) category = 'bright';
-//   else if (lightness < 30) category = 'dark';
-//   else category = 'neutral';
-
-//   return adjectives[category][Math.floor(Math.random() * adjectives[category].length)];
-// }
-
 function generateRandomScheme(totalSchemes: number): ColorScheme {
   if (totalSchemes < 30) {
     return generateCompletelyRandomScheme();
@@ -349,6 +327,50 @@ function generateNoun(): string {
     'Nebula', 'Galaxy', 'Cosmos', 'Universe', 'Infinity', 'Eternity', 'Dimension', 'Realm',
   ];
   return nouns[Math.floor(Math.random() * nouns.length)];
+}
+
+import { Buffer } from 'buffer';
+
+export function encodeThemeForUrl(scheme: ColorScheme): string {
+  const encodedColors = Object.entries(scheme.colors).flatMap(([group, colors]) =>
+    Object.entries(colors).map(([name, color]) => color.slice(1))
+  ).join('');
+  
+  const data = JSON.stringify({
+    name: scheme.name,
+    colors: encodedColors
+  });
+
+  return Buffer.from(data).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+export function decodeThemeFromUrl(encodedTheme: string): ColorScheme {
+  const base64 = encodedTheme.replace(/-/g, '+').replace(/_/g, '/');
+  const paddedBase64 = base64 + '='.repeat((4 - base64.length % 4) % 4);
+  const decodedString = Buffer.from(paddedBase64, 'base64').toString('utf-8');
+  const decoded = JSON.parse(decodedString);
+  const colors = decoded.colors.match(/.{6}/g);
+  
+  const colorGroups = ['primary', 'normal', 'bright'];
+  const colorNames = {
+    primary: ['background', 'foreground'],
+    normal: ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'],
+    bright: ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
+  };
+
+  let colorIndex = 0;
+  const decodedColors = colorGroups.reduce((acc: Record<string, Record<string, string>>, group) => {
+    acc[group] = colorNames[group as keyof typeof colorNames].reduce((groupAcc: Record<string, string>, name: string) => {
+      groupAcc[name] = `#${colors[colorIndex++]}`;
+      return groupAcc;
+    }, {});
+    return acc;
+  }, {});
+
+  return {
+    name: decoded.name,
+    colors: decodedColors as ColorScheme['colors']
+  };
 }
 
 export type { ColorScheme };

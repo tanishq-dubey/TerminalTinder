@@ -176,7 +176,6 @@ export default function Home() {
           isOpen={isSettingsOpen}
           onClose={toggleSettings}
           isDarkMode={isDarkMode}
-          onToggleDarkMode={() => setIsDarkMode(!isDarkMode)}
           settings={settings}
           setSettings={setSettings}
           saveSettings={saveSettings}

@@ -7,7 +7,6 @@ interface SettingsProps {
   isOpen: boolean;
   onClose: () => void;
   isDarkMode: boolean;
-  onToggleDarkMode: () => void;
   settings: AppSettings;
   setSettings: (settings: AppSettings) => void;
   saveSettings: boolean;
@@ -18,7 +17,6 @@ const Settings: React.FC<SettingsProps> = ({
   isOpen,
   onClose,
   isDarkMode,
-  onToggleDarkMode,
   settings,
   setSettings,
   saveSettings,
@@ -58,21 +56,6 @@ const Settings: React.FC<SettingsProps> = ({
           </button>
         </div>
         <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <span>Dark Mode</span>
-            <button
-              onClick={onToggleDarkMode}
-              className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out ${
-                isDarkMode ? 'bg-blue-600' : 'bg-gray-300'
-              }`}
-            >
-              <div
-                className={`w-4 h-4 rounded-full bg-white transform transition-transform duration-300 ease-in-out ${
-                  isDarkMode ? 'translate-x-6' : ''
-                }`}
-              />
-            </button>
-          </div>
           <div>
             <label className="block mb-2">Output Format</label>
             <div className="flex items-center">
