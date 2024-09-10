@@ -15,9 +15,24 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Terminal Tinder",
-  description: "Generate and discover terminal color schemes",
-  icons: {
-    icon: '/app-icon.svg',
+  description: "Fall in love with your next color scheme",
+  openGraph: {
+    title: "Terminal Tinder",
+    description: "Fall in love with your next color scheme",
+    images: [
+      {
+        url: "/app-logo-social.png", // Make sure to create this image
+        width: 1200,
+        height: 630,
+        alt: "Terminal Tinder Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terminal Tinder",
+    description: "Fall in love with your next color scheme",
+    images: ["/app-logo-social.png"], // Make sure to create this image
   },
 };
 
