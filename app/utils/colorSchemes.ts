@@ -332,8 +332,8 @@ function generateNoun(): string {
 import { Buffer } from 'buffer';
 
 export function encodeThemeForUrl(scheme: ColorScheme): string {
-  const encodedColors = Object.entries(scheme.colors).flatMap(([group, colors]) =>
-    Object.entries(colors).map(([name, color]) => color.slice(1))
+  const encodedColors = Object.entries(scheme.colors).flatMap(([, colors]) =>
+    Object.entries(colors).map(([, color]) => color.slice(1))
   ).join('');
   
   const data = JSON.stringify({

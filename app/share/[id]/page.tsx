@@ -12,9 +12,9 @@ import { generateYAML, generateJSON, generateXResources, generateTOML, generateI
 const SharedTheme: React.FC = () => {
   const params = useParams();
   const [scheme, setScheme] = useState<ColorScheme | null>(null);
-  const [codeSample, setCodeSample] = useState<CodeSample>('javascript');
+  const [codeSample, ] = useState<CodeSample>('javascript');
   const [outputFormat, setOutputFormat] = useState('yaml');
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     if (params.id) {
