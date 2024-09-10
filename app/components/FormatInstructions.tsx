@@ -28,7 +28,7 @@ const FormatInstructions: React.FC<FormatInstructionsProps> = ({ isOpen, onClose
           </ol>
 
           <h3 className="text-xl font-semibold">JSON</h3>
-          <p>JSON format can be used in various terminals. Refer to your terminal's documentation for specific instructions.</p>
+          <p>JSON format can be used in various terminals. Refer to your terminal&apos;s documentation for specific instructions.</p>
 
           <h3 className="text-xl font-semibold">XResources</h3>
           <ol className="list-decimal list-inside space-y-2">
@@ -41,7 +41,7 @@ const FormatInstructions: React.FC<FormatInstructionsProps> = ({ isOpen, onClose
           <ol className="list-decimal list-inside space-y-2">
             <li>Download the TOML file.</li>
             <li>Place it in your Alacritty configuration directory.</li>
-            <li>In your <code>alacritty.toml</code> file, add: <code>import = ["/path/to/your/theme.toml"]</code></li>
+            <li>In your <code>alacritty.toml</code> file, add: <code>import = [&quot;/path/to/your/theme.toml&quot;]</code></li>
           </ol>
 
           <h3 className="text-xl font-semibold">iTerm2</h3>
@@ -49,7 +49,7 @@ const FormatInstructions: React.FC<FormatInstructionsProps> = ({ isOpen, onClose
             <li>Download the iTerm2 color scheme file.</li>
             <li>Open iTerm2 preferences.</li>
             <li>Go to Profiles &gt; Colors.</li>
-            <li>Click on "Color Presets..." and choose "Import..."</li>
+            <li>Click on &quot;Color Presets...&quot; and choose &quot;Import...&quot;</li>
             <li>Select the downloaded file.</li>
           </ol>
 
@@ -57,8 +57,8 @@ const FormatInstructions: React.FC<FormatInstructionsProps> = ({ isOpen, onClose
           <ol className="list-decimal list-inside space-y-2">
             <li>Download the JSON file.</li>
             <li>Open Windows Terminal settings.</li>
-            <li>In the "schemes" array, add the contents of the downloaded JSON file.</li>
-            <li>In your profile, set "colorScheme" to the name of your new scheme.</li>
+            <li>In the &quot;schemes&quot; array, add the contents of the downloaded JSON file.</li>
+            <li>In your profile, set &quot;colorScheme&quot; to the name of your new scheme.</li>
           </ol>
 
           <h3 className="text-xl font-semibold">Terminal.app (macOS)</h3>

@@ -166,27 +166,27 @@ function getTheme(dominantColor: Color): string {
   return theme ? theme.name : '';
 }
 
-function getRandomAdjective(color: Color): string {
-  const adjectives = {
-    warm: ['Cozy', 'Toasty', 'Snug'],
-    cool: ['Crisp', 'Fresh', 'Breezy'],
-    neutral: ['Balanced', 'Harmonious', 'Zen'],
-    bright: ['Radiant', 'Luminous', 'Gleaming'],
-    dark: ['Mysterious', 'Enigmatic', 'Shadowy'],
-  };
+// function getRandomAdjective(color: Color): string {
+//   const adjectives = {
+//     warm: ['Cozy', 'Toasty', 'Snug'],
+//     cool: ['Crisp', 'Fresh', 'Breezy'],
+//     neutral: ['Balanced', 'Harmonious', 'Zen'],
+//     bright: ['Radiant', 'Luminous', 'Gleaming'],
+//     dark: ['Mysterious', 'Enigmatic', 'Shadowy'],
+//   };
 
-  const hue = color.hue();
-  const lightness = color.lightness();
+//   const hue = color.hue();
+//   const lightness = color.lightness();
 
-  let category: keyof typeof adjectives;
-  if (hue < 60 || hue > 300) category = 'warm';
-  else if (hue >= 60 && hue <= 300) category = 'cool';
-  else if (lightness > 70) category = 'bright';
-  else if (lightness < 30) category = 'dark';
-  else category = 'neutral';
+//   let category: keyof typeof adjectives;
+//   if (hue < 60 || hue > 300) category = 'warm';
+//   else if (hue >= 60 && hue <= 300) category = 'cool';
+//   else if (lightness > 70) category = 'bright';
+//   else if (lightness < 30) category = 'dark';
+//   else category = 'neutral';
 
-  return adjectives[category][Math.floor(Math.random() * adjectives[category].length)];
-}
+//   return adjectives[category][Math.floor(Math.random() * adjectives[category].length)];
+// }
 
 function generateRandomScheme(totalSchemes: number): ColorScheme {
   if (totalSchemes < 30) {

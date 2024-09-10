@@ -8,7 +8,7 @@ import Settings from "./components/Settings";
 import HelpDialog from "./components/HelpDialog";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
-import { CodeSample, AppSettings } from './utils/types';
+import { AppSettings } from './utils/types';
 
 export default function Home() {
   const [schemes, setSchemes] = useState<ColorScheme[]>([]);
