@@ -1,14 +1,15 @@
 import React from 'react';
-import { ColorScheme } from '../utils/colorSchemes';
+import { ColorScheme, encodeThemeForUrl } from '../utils/colorSchemes';
 import { generateYAML, generateJSON, generateXResources, generateTOML } from '../utils/exportFormats';
 import Image from 'next/image';
 import ColorPalette from './ColorPalette';
+import { useRouter } from 'next/navigation';
 
 interface HistoryPopupProps {
   likedSchemes: ColorScheme[];
   dislikedSchemes: ColorScheme[];
   onClose: () => void;
-  onClearHistory: () => void;  // Add this line
+  onClearHistory: () => void;
   isDarkMode: boolean;
   outputFormat: string;
 }
@@ -17,10 +18,12 @@ const HistoryPopup: React.FC<HistoryPopupProps> = ({
   likedSchemes, 
   dislikedSchemes, 
   onClose, 
-  onClearHistory,  // Add this line
+  onClearHistory,
   isDarkMode, 
   outputFormat 
 }) => {
+  const router = useRouter();
+
   const handleDownload = (scheme: ColorScheme) => {
     let content: string;
     let fileExtension: string;
@@ -55,19 +58,31 @@ const HistoryPopup: React.FC<HistoryPopupProps> = ({
     URL.revokeObjectURL(url);
   };
 
+  const handleThemeClick = (scheme: ColorScheme) => {
+    const encodedTheme = encodeThemeForUrl(scheme);
+    router.push(`/share/${encodedTheme}`);
+  };
+
   const renderSchemeGrid = (schemes: ColorScheme[], title: string) => (
     <div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-6">
         {schemes.map((scheme, index) => (
-          <div key={`${scheme.name}-${index}`} className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
+          <div 
+            key={`${scheme.name}-${index}`} 
+            className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg cursor-pointer hover:shadow-lg transition-shadow duration-300"
+            onClick={() => handleThemeClick(scheme)}
+          >
             <h3 className="text-sm font-semibold mb-2 truncate">{scheme.name}</h3>
             <ColorPalette 
               colors={Object.values(scheme.colors.normal).concat(Object.values(scheme.colors.bright))}
               size="small"
             />
             <button 
-              onClick={() => handleDownload(scheme)}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleDownload(scheme);
+              }}
               className="w-full bg-blue-500 text-white text-xs py-1 px-2 rounded hover:bg-blue-600 transition-colors duration-300 mt-2"
             >
               Download

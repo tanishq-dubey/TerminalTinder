@@ -14,7 +14,7 @@ import { generateYAML, generateJSON, generateXResources, generateTOML, generateI
 const SharedTheme: React.FC = () => {
   const params = useParams();
   const [scheme, setScheme] = useState<ColorScheme | null>(null);
-  const [codeSample, ] = useState<CodeSample>('javascript');
+  const [codeSample] = useState<CodeSample>('javascript');
   const [outputFormat, setOutputFormat] = useState('yaml');
   const [, setIsDarkMode] = useState(false);
 
@@ -25,6 +25,12 @@ const SharedTheme: React.FC = () => {
     }
     setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
   }, [params.id]);
+
+  useEffect(() => {
+    if (scheme) {
+      document.title = `${scheme.name} - Terminal Tinder Color Scheme`;
+    }
+  }, [scheme]);
 
   if (!scheme) {
     return <div>Loading...</div>;
@@ -76,6 +82,9 @@ const SharedTheme: React.FC = () => {
     URL.revokeObjectURL(url);
   };
 
+  const socialPreviewSvg = DynamicSocialPreview({ scheme });
+  const socialPreviewUrl = `data:image/svg+xml,${encodeURIComponent(socialPreviewSvg as string)}`;
+
   return (
     <>
       <Head>
@@ -83,13 +92,13 @@ const SharedTheme: React.FC = () => {
         <meta name="description" content={`Check out this beautiful color scheme: ${scheme.name}`} />
         <meta property="og:title" content={`${scheme.name} - Terminal Tinder Color Scheme`} />
         <meta property="og:description" content={`Check out this beautiful color scheme: ${scheme.name}`} />
-        <meta property="og:image" content={`data:image/svg+xml,${encodeURIComponent(DynamicSocialPreview({ scheme }).outerHTML)}`} />
+        <meta property="og:image" content={socialPreviewUrl} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${scheme.name} - Terminal Tinder Color Scheme`} />
         <meta name="twitter:description" content={`Check out this beautiful color scheme: ${scheme.name}`} />
-        <meta name="twitter:image" content={`data:image/svg+xml,${encodeURIComponent(DynamicSocialPreview({ scheme }).outerHTML)}`} />
+        <meta name="twitter:image" content={socialPreviewUrl} />
       </Head>
       <div className="min-h-screen w-screen overflow-hidden font-[family-name:var(--font-geist-sans)] dark:bg-gray-900 dark:text-white transition-colors duration-300">
         <header className="absolute top-2 left-2 right-2 flex justify-between items-start z-20">
@@ -144,7 +153,7 @@ const SharedTheme: React.FC = () => {
                 <h2 className="text-xl font-semibold mb-2">Share</h2>
                 <input
                   type="text"
-                  value={window.location.href}
+                  value={typeof window !== 'undefined' ? window.location.href : ''}
                   readOnly
                   className="w-full p-2 border rounded bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
                 />
