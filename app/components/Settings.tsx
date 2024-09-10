@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-// Import the CodeSample type
-import { CodeSample } from '../utils/types';
+import { CodeSample, AppSettings } from '../utils/types';
+import FormatInstructions from './FormatInstructions';
 
 interface SettingsProps {
   isOpen: boolean;
   onClose: () => void;
   isDarkMode: boolean;
   onToggleDarkMode: () => void;
-  outputFormat: string;
-  setOutputFormat: (format: string) => void;
-  codeSample: CodeSample;
-  setCodeSample: (sample: CodeSample) => void;
+  settings: AppSettings;
+  setSettings: (settings: AppSettings) => void;
   saveSettings: boolean;
   setSaveSettings: (save: boolean) => void;
 }
@@ -22,14 +19,13 @@ const Settings: React.FC<SettingsProps> = ({
   onClose,
   isDarkMode,
   onToggleDarkMode,
-  outputFormat,
-  setOutputFormat,
-  codeSample,
-  setCodeSample,
+  settings,
+  setSettings,
   saveSettings,
   setSaveSettings
 }) => {
   const [showCookieNotice, setShowCookieNotice] = useState(false);
+  const [showFormatInstructions, setShowFormatInstructions] = useState(false);
 
   useEffect(() => {
     if (saveSettings && !localStorage.getItem('cookieNoticeShown')) {
@@ -79,22 +75,33 @@ const Settings: React.FC<SettingsProps> = ({
           </div>
           <div>
             <label className="block mb-2">Output Format</label>
-            <select
-              value={outputFormat}
-              onChange={(e) => setOutputFormat(e.target.value)}
-              className="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600"
-            >
-              <option value="json">JSON</option>
-              <option value="xresources">XResources</option>
-              <option value="yaml">YAML (Alacritty)</option>
-              <option value="toml">TOML (Alacritty)</option>
-            </select>
+            <div className="flex items-center">
+              <select
+                value={settings.outputFormat}
+                onChange={(e) => setSettings({ ...settings, outputFormat: e.target.value })}
+                className="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600"
+              >
+                <option value="yaml">YAML (Alacritty)</option>
+                <option value="json">JSON</option>
+                <option value="xresources">XResources</option>
+                <option value="toml">TOML (Alacritty)</option>
+                <option value="iterm2">iTerm2</option>
+                <option value="windows-terminal">Windows Terminal</option>
+                <option value="terminal-app">Terminal.app</option>
+              </select>
+              <button
+                onClick={() => setShowFormatInstructions(true)}
+                className="ml-2 text-blue-500 hover:text-blue-600"
+              >
+                <Image src={isDarkMode ? "/question-mark-dark.svg" : "/question-mark-light.svg"} alt="Format Instructions" width={24} height={24} />
+              </button>
+            </div>
           </div>
           <div>
             <label className="block mb-2">Code Sample</label>
             <select
-              value={codeSample}
-              onChange={(e) => setCodeSample(e.target.value as CodeSample)}
+              value={settings.codeSample}
+              onChange={(e) => setSettings({ ...settings, codeSample: e.target.value as CodeSample })}
               className="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600"
             >
               <option value="c">C</option>
@@ -116,6 +123,36 @@ const Settings: React.FC<SettingsProps> = ({
             />
             <label htmlFor="saveSettings">Save settings in cookie</label>
           </div>
+          <div className="flex items-center justify-between mt-4">
+            <span>Junior Dev Mode</span>
+            <button
+              onClick={() => setSettings({ ...settings, juniorDevMode: !settings.juniorDevMode })}
+              className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out ${
+                settings.juniorDevMode ? 'bg-blue-600' : 'bg-gray-300'
+              }`}
+            >
+              <div
+                className={`w-4 h-4 rounded-full bg-white transform transition-transform duration-300 ease-in-out ${
+                  settings.juniorDevMode ? 'translate-x-6' : ''
+                }`}
+              />
+            </button>
+          </div>
+          <div className="flex items-center justify-between mt-4">
+            <span>Party Mode</span>
+            <button
+              onClick={() => setSettings({ ...settings, partyMode: !settings.partyMode })}
+              className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out ${
+                settings.partyMode ? 'bg-blue-600' : 'bg-gray-300'
+              }`}
+            >
+              <div
+                className={`w-4 h-4 rounded-full bg-white transform transition-transform duration-300 ease-in-out ${
+                  settings.partyMode ? 'translate-x-6' : ''
+                }`}
+              />
+            </button>
+          </div>
         </div>
       </div>
       {showCookieNotice && (
@@ -126,6 +163,11 @@ const Settings: React.FC<SettingsProps> = ({
           </button>
         </div>
       )}
+      <FormatInstructions
+        isOpen={showFormatInstructions}
+        onClose={() => setShowFormatInstructions(false)}
+        isDarkMode={isDarkMode}
+      />
     </div>
   );
 };

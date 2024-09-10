@@ -8,7 +8,7 @@ import Settings from "./components/Settings";
 import HelpDialog from "./components/HelpDialog";
 import { ColorScheme, knownSchemes, generateRandomScheme, generateSchemeFromGeneticAlgorithm } from './utils/colorSchemes';
 import { AnimatePresence } from 'framer-motion';
-import { CodeSample } from './utils/types';
+import { CodeSample, AppSettings } from './utils/types';
 
 export default function Home() {
   const [schemes, setSchemes] = useState<ColorScheme[]>([]);
@@ -18,9 +18,14 @@ export default function Home() {
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
-  const [outputFormat, setOutputFormat] = useState('yaml');
-  const [codeSample, setCodeSample] = useState<CodeSample>('javascript');
+  const [settings, setSettings] = useState<AppSettings>({
+    outputFormat: 'yaml',
+    codeSample: 'javascript',
+    juniorDevMode: false,
+    partyMode: false,
+  });
   const [saveSettings, setSaveSettings] = useState(false);
+  const [totalSchemes, setTotalSchemes] = useState(0);
 
   const generateNewSchemes = (count: number) => {
     const knownCount = Math.floor(count / 2);
@@ -28,11 +33,14 @@ export default function Home() {
     const newSchemes = [
       ...knownSchemes.sort(() => 0.5 - Math.random()).slice(0, knownCount),
       ...Array(generatedCount).fill(null).map(() => 
-        likedSchemes.length > 0 ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes) : generateRandomScheme()
+        likedSchemes.length > 0 || dislikedSchemes.length > 0
+          ? generateSchemeFromGeneticAlgorithm(likedSchemes, dislikedSchemes, totalSchemes)
+          : generateRandomScheme(totalSchemes)
       )
     ];
 
     setSchemes(prevSchemes => [...prevSchemes, ...newSchemes].sort(() => 0.5 - Math.random()));
+    setTotalSchemes(prev => prev + count);
   };
 
   useEffect(() => {
@@ -51,8 +59,7 @@ export default function Home() {
     const storedSettings = document.cookie.split('; ').find(row => row.startsWith('settings='));
     if (storedSettings) {
       const settings = JSON.parse(storedSettings.split('=')[1]);
-      setOutputFormat(settings.outputFormat);
-      setCodeSample(settings.codeSample);
+      setSettings(settings);
       setSaveSettings(true);
     }
   }, []);
@@ -71,12 +78,12 @@ export default function Home() {
 
   useEffect(() => {
     if (saveSettings) {
-      const settings = JSON.stringify({ outputFormat, codeSample });
-      document.cookie = `settings=${settings}; max-age=31536000; path=/`; // 1 year expiration
+      const settingsToSave = JSON.stringify(settings);
+      document.cookie = `settings=${settingsToSave}; max-age=31536000; path=/`; // 1 year expiration
     } else {
       document.cookie = 'settings=; max-age=0; path=/';
     }
-  }, [saveSettings, outputFormat, codeSample]);
+  }, [saveSettings, settings]);
 
   const handleLike = (scheme: ColorScheme) => {
     setLikedSchemes(prev => [...prev, scheme]);
@@ -149,8 +156,7 @@ export default function Home() {
               onDislike={() => handleDislike(scheme)}
               index={index}
               isDarkMode={isDarkMode}
-              codeSample={codeSample}
-              outputFormat={outputFormat}
+              settings={settings}
             />
           ))}
         </AnimatePresence>
@@ -160,9 +166,9 @@ export default function Home() {
           likedSchemes={likedSchemes}
           dislikedSchemes={dislikedSchemes}
           onClose={toggleHistory}
-          onClearHistory={handleClearHistory}  // Add this line
+          onClearHistory={handleClearHistory}
           isDarkMode={isDarkMode}
-          outputFormat={outputFormat}
+          outputFormat={settings.outputFormat}
         />
       )}
       {isSettingsOpen && (
@@ -171,10 +177,8 @@ export default function Home() {
           onClose={toggleSettings}
           isDarkMode={isDarkMode}
           onToggleDarkMode={() => setIsDarkMode(!isDarkMode)}
-          outputFormat={outputFormat}
-          setOutputFormat={setOutputFormat}
-          codeSample={codeSample}
-          setCodeSample={(sample: CodeSample) => setCodeSample(sample)}
+          settings={settings}
+          setSettings={setSettings}
           saveSettings={saveSettings}
           setSaveSettings={setSaveSettings}
         />

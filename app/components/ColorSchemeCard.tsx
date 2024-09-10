@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ColorScheme } from '../utils/colorSchemes';
-import { generateYAML, generateJSON, generateXResources, generateTOML } from '../utils/exportFormats';
+import { generateYAML, generateJSON, generateXResources, generateTOML, generateITerm2, generateWindowsTerminal, generateTerminalApp } from '../utils/exportFormats';
 import { Highlight, themes } from 'prism-react-renderer';
 import { motion, useAnimation } from 'framer-motion';
 import ColorPalette from './ColorPalette';
+import confetti from 'canvas-confetti';
+import { AppSettings } from '../utils/types';
 
 interface ColorSchemeCardProps {
   scheme: ColorScheme;
@@ -12,16 +14,42 @@ interface ColorSchemeCardProps {
   onDislike: () => void;
   index: number;
   isDarkMode: boolean;
-  codeSample: string;
-  outputFormat: string;
+  settings: AppSettings;
 }
 
-const ColorSchemeCard: React.FC<ColorSchemeCardProps> = ({ scheme, onLike, onDislike, index, isDarkMode, codeSample, outputFormat }) => {
+const ColorSchemeCard: React.FC<ColorSchemeCardProps> = ({ scheme, onLike, onDislike, index, isDarkMode, settings }) => {
   const [overlayColor, setOverlayColor] = useState('rgba(0, 0, 0, 0)');
   const controls = useAnimation();
 
   const getCodeExample = () => {
-    // Add code samples for each language here
+    if (settings.juniorDevMode) {
+      return `
+// This code is perfect, no need to review
+function makeItWork() {
+  return true;
+}
+
+// This function does everything
+function doEverything() {
+  // TODO: Implement
+}
+
+// Ignore this, it's probably not important
+try {
+  somethingRisky();
+} catch (e) {
+  // This will never happen
+}
+
+// Copy-pasted from StackOverflow
+const regex = /^([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$/;
+
+// I'll fix this later
+while (true) {
+  // Infinite loop for extra performance
+}
+      `;
+    }
     const samples = {
       c: `#include <stdio.h>
 
@@ -149,31 +177,30 @@ func main() {
 	num := 7
 	fmt.Printf("Is %d prime? %v\n", num, isPrime(num))
 }`,
-      javascript: `function isPrime(n) {
-    if (n <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) return false;
-    }
-    return true;
+      javascript: `/* Calculate the area and circumference of a circle */
+const pi = 3.14;
+
+function calculateArea(r) {
+  return pi * r ** 2;   // Exponentiation, constant, operator
 }
 
-function primesUpTo(limit) {
-    let primes = [];
-    for (let i = 2; i <= limit; i++) {
-        if (isPrime(i)) primes.push(i);
-    }
-    return primes;
+function calculateCircumference(r) {
+  return 2 * pi * r;     // Function, return, operators
 }
 
-function fibonacci(n) {
-    let fib = [0, 1];
-    for (let i = 2; i < n; i++) {
-        fib.push(fib[i - 1] + fib[i - 2]);
-    }
-    return fib;
+if (radius > 0) {
+  console.log(\`Area: $\{calculateArea(radius)\}\`);  // Template string, method
+  console.log(\`Circumference: $\{calculateCircumference(radius)\}\`);
+} else {
+  console.error("Invalid radius!");  // Error handling
 }
 
-let limit = 50;`,
+try {
+  radius = -1;
+  if (radius < 0) throw new Error("Negative radius");  // Throw, error
+} catch (e) {
+  console.warn(e.message);   // Catch block, method
+}`,
       bash: `#!/bin/bash
 
 is_prime() {
@@ -219,7 +246,7 @@ fi`
       return sample in samples;
     };
 
-    return isValidSample(codeSample) ? samples[codeSample] : samples.javascript;
+    return isValidSample(settings.codeSample) ? samples[settings.codeSample] : samples.javascript;
   };
 
   const handleDownload = (e: React.MouseEvent) => {
@@ -227,7 +254,7 @@ fi`
     let content: string;
     let fileExtension: string;
 
-    switch (outputFormat) {
+    switch (settings.outputFormat) {
       case 'json':
         content = generateJSON(scheme);
         fileExtension = 'json';
@@ -239,6 +266,18 @@ fi`
       case 'toml':
         content = generateTOML(scheme);
         fileExtension = 'toml';
+        break;
+      case 'iterm2':
+        content = generateITerm2(scheme);
+        fileExtension = 'itermcolors';
+        break;
+      case 'windows-terminal':
+        content = generateWindowsTerminal(scheme);
+        fileExtension = 'json';
+        break;
+      case 'terminal-app':
+        content = generateTerminalApp(scheme);
+        fileExtension = 'terminal';
         break;
       case 'yaml':
       default:
@@ -259,7 +298,16 @@ fi`
 
   const handleLike = () => {
     setOverlayColor('rgba(0, 255, 0, 0.1)');
-    controls.start({ x: 300, opacity: 0, transition: { duration: 0.3 } }).then(onLike);
+    controls.start({ x: 300, opacity: 0, transition: { duration: 0.3 } }).then(() => {
+      if (settings.partyMode) {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
+      onLike();
+    });
   };
 
   const handleDislike = () => {
@@ -318,7 +366,7 @@ fi`
           </button>
         </div>
         <div className="bg-gray-100 dark:bg-gray-700 rounded-md mb-2 flex-grow overflow-hidden z-10 shadow-md">
-          <Highlight theme={themes.dracula} code={getCodeExample()} language={codeSample}>
+          <Highlight theme={themes.dracula} code={getCodeExample()} language={settings.codeSample}>
             {({ className, style, tokens, getLineProps, getTokenProps }) => (
               <pre className={`${className} text-sm p-4 h-full overflow-auto`} style={{ ...style, backgroundColor: scheme.colors.primary.background }}>
                 {tokens.map((line, i) => (

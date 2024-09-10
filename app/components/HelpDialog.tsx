@@ -21,6 +21,7 @@ const HelpDialog: React.FC<HelpDialogProps> = ({ isOpen, onClose, isDarkMode }) 
         </div>
         <div className="space-y-4">
           <p>Welcome to TerminalTinder, the dating app that actually designed to be used over and over again.</p>
+          <p>The more you interact with TerminalTinder, the better it becomes at suggesting color schemes and even creating new ones.</p>
           
           <h3 className="text-xl font-semibold">How it works:</h3>
           <ol className="list-decimal list-inside space-y-2">
@@ -34,12 +35,12 @@ const HelpDialog: React.FC<HelpDialogProps> = ({ isOpen, onClose, isDarkMode }) 
           <ul className="list-disc list-inside space-y-2">
             <li>View a live preview of the color scheme applied to code.</li>
             <li>Change the programming language of the preview in the settings.</li>
-            <li>Download color schemes in various formats (YAML, JSON, TOML, Xresources).</li>
+            <li>Download color schemes in various formats (YAML, JSON, TOML, Xresources, and more).</li>
             <li>View your liked and disliked schemes in the history.</li>
           </ul>
 
-          <p>The more you interact with TerminalTinder, the better it becomes at suggesting color schemes. All information is local, so refreshing the page refreshes learning.</p>
-          <p>It&apos;s your internet, take it back.</p>
+          <hr className="my-4 border-t border-gray-200 w-full" />
+          <p>DWS - It&apos;s your internet, take it back.</p>
           <hr className="my-4 border-t border-gray-200 w-full" />
           <p>All credit for any non generated color schemes goes to their original creators. Color schemes are sourced from <a href="https://github.com/Mayccoll/Gogh" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">Gogh</a>.</p>
           
